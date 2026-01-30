@@ -39,7 +39,7 @@ export default function Home() {
                 <span className="italic text-accent">AI Agents</span> That Work For You
               </h2>
               <p className="text-lg lg:text-xl text-foreground/70 mb-8 font-[family-name:var(--font-roboto)] leading-relaxed">
-               We build AI agents for your business at the fraction of the cost of an employee, and we maintain them so you don't have to worry about anything.
+               We build AI agents for your business that work while you sleep, and we maintain them so you don&apos;t have to worry about anything.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#get-started" className="bg-accent hover:bg-accent-dark text-white px-8 py-3.5 rounded-lg font-medium transition-colors text-center">
@@ -244,10 +244,10 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h3 className="text-4xl lg:text-5xl font-bold mb-4 font-[family-name:var(--font-inter)]">
-              Start Your <span className="italic text-accent">Transformation</span> Today
+              Get <span className="italic text-accent">in Touch</span>
             </h3>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Tell us about your business and discover how AI agents can help you do more with less
+              Let's get on a free discovery call together to see how you can benefit from AI-powered automation.
             </p>
           </div>
 

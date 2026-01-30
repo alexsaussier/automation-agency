@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     // Send email
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: 'alexandre@teamdesk.app',
+      to: 'asaussier99@gmail.com',
       subject: `New Lead: ${businessType} - ${businessSize}`,
       html: emailContent,
     });

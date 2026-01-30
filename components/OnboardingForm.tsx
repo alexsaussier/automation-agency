@@ -39,8 +39,9 @@ export default function OnboardingForm() {
   }, [step, displayStep]);
 
   const businessTypes = [
+    'Law Firm',
     'E-commerce',
-    'SaaS',
+    'Software',
     'Consulting',
     'Healthcare',
     'Finance',
@@ -48,6 +49,7 @@ export default function OnboardingForm() {
     'Retail',
     'Real Estate',
     'Education',
+    'Other'
   ];
 
   const businessSizes = [
@@ -137,34 +139,43 @@ export default function OnboardingForm() {
       >
         {displayStep === 1 && (
           <div className="space-y-8">
-            <div>
+            <div className="text-center">
               <h3 className="text-3xl lg:text-4xl font-bold mb-3 font-[family-name:var(--font-inter)]">
-                What type of business do you have?
+                What kind of business are you in?
               </h3>
               <p className="text-lg text-foreground/60 font-[family-name:var(--font-roboto)]">
-                Help us understand your industry so we can tailor our automation solutions.
+                Help us understand your business to provide you tailored advice.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {businessTypes.map((type) => (
-                <button
-                  key={type}
-                  onClick={() => handleBusinessTypeSelect(type)}
-                  disabled={isTransitioning}
-                  className="group relative p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <span className="text-base font-medium group-hover:text-accent transition-colors">
-                    {type}
-                  </span>
-                </button>
-              ))}
+            <div className="relative max-h-[500px]">
+              {/* Top gradient fade */}
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              
+              {/* Scrollable container */}
+              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
+                {businessTypes.map((type) => (
+                  <button
+                    key={type}
+                    onClick={() => handleBusinessTypeSelect(type)}
+                    disabled={isTransitioning}
+                    className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
+                  >
+                    <span className="text-base font-medium group-hover:text-accent transition-colors">
+                      {type}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              
+              {/* Bottom gradient fade */}
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
             </div>
           </div>
         )}
 
         {displayStep === 2 && (
           <div className="space-y-8">
-            <div>
+            <div className="text-center">
               <h3 className="text-3xl lg:text-4xl font-bold mb-3 font-[family-name:var(--font-inter)]">
                 What is the size of your business?
               </h3>
@@ -172,26 +183,35 @@ export default function OnboardingForm() {
                 This helps us recommend the right scale of automation solutions.
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 max-w-2xl">
-              {businessSizes.map((size) => (
-                <button
-                  key={size}
-                  onClick={() => handleBusinessSizeSelect(size)}
-                  disabled={isTransitioning}
-                  className="group relative p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <span className="text-base font-medium group-hover:text-accent transition-colors">
-                    {size}
-                  </span>
-                </button>
-              ))}
+            <div className="relative max-h-[500px]">
+              {/* Top gradient fade */}
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              
+              {/* Scrollable container */}
+              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
+                {businessSizes.map((size) => (
+                  <button
+                    key={size}
+                    onClick={() => handleBusinessSizeSelect(size)}
+                    disabled={isTransitioning}
+                    className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
+                  >
+                    <span className="text-base font-medium group-hover:text-accent transition-colors">
+                      {size}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              
+              {/* Bottom gradient fade */}
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
             </div>
           </div>
         )}
 
         {displayStep === 3 && (
           <div className="space-y-8">
-            <div>
+            <div className="text-center">
               <h3 className="text-3xl lg:text-4xl font-bold mb-3 font-[family-name:var(--font-inter)]">
                 What parts of your business take the most time?
               </h3>
@@ -199,26 +219,35 @@ export default function OnboardingForm() {
                 Select the areas where you spend the most effort, or tell us about something else.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {painPoints.map((point) => (
-                <button
-                  key={point}
-                  onClick={() => handlePainPointSelect(point)}
-                  className={`group relative p-6 rounded-xl border-2 transition-all text-left ${
-                    formData.painPoint === point
-                      ? 'border-accent bg-accent text-white shadow-lg shadow-accent/20'
-                      : 'border-border bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10'
-                  }`}
-                >
-                  <span className={`text-base font-medium transition-colors ${
-                    formData.painPoint === point
-                      ? ''
-                      : 'group-hover:text-accent'
-                  }`}>
-                    {point}
-                  </span>
-                </button>
-              ))}
+            <div className="relative max-h-[500px]">
+              {/* Top gradient fade */}
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              
+              {/* Scrollable container */}
+              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
+                {painPoints.map((point) => (
+                  <button
+                    key={point}
+                    onClick={() => handlePainPointSelect(point)}
+                    className={`group relative w-full p-6 rounded-xl border-2 transition-all text-left ${
+                      formData.painPoint === point
+                        ? 'border-accent bg-accent text-white shadow-lg shadow-accent/20'
+                        : 'border-border bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10'
+                    }`}
+                  >
+                    <span className={`text-base font-medium transition-colors ${
+                      formData.painPoint === point
+                        ? ''
+                        : 'group-hover:text-accent'
+                    }`}>
+                      {point}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              
+              {/* Bottom gradient fade */}
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
             </div>
 
             <div className="pt-4">
@@ -242,7 +271,7 @@ export default function OnboardingForm() {
                 disabled={!formData.painPoint && !formData.otherPainPoint.trim()}
                 className="bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-xl text-base font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 font-[family-name:var(--font-inter)]"
               >
-                Get Your Custom Solution
+                Contact Us
               </button>
             </div>
           </div>
@@ -253,10 +282,10 @@ export default function OnboardingForm() {
         <div className="space-y-6">
           <div>
             <h3 className="text-2xl font-bold mb-2 font-[family-name:var(--font-inter)]">
-              One Last Thing...
+              Help us prepare for your call
             </h3>
             <p className="text-foreground/60 font-[family-name:var(--font-roboto)]">
-              Is there anything else that would be helpful for us to know?
+              Is there anything else that would be helpful for us to know before?
             </p>
           </div>
 

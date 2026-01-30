@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 // Inspiration: https://catalis-temlis.webflow.io/home/home-v1
 export default function About() {
@@ -68,7 +68,7 @@ export default function About() {
                   </p>
 
                   <p>
-                    As a former Consultant at Deloitte's Omnia AI practice, Alexandre specialized in AI 
+                    As a former Consultant at Deloitte&apos;s Omnia AI practice, Alexandre specialized in AI 
                     Automation consulting, building large-scale solutions for some of the biggest companies and institutions in Canada. 
                   </p>
 
@@ -80,12 +80,54 @@ export default function About() {
                   <p>
                     A graduate of McGill University with a degree in Finance and Computer Science, Alexandre has 
                     worked across multiple continents including Montreal, London, and Monaco. Through Teamdesk AI, 
-                    he's dedicated to helping businesses of all sizes leverage intelligent automation to reduce manual 
+                    he&apos;s dedicated to helping businesses of all sizes leverage intelligent automation to reduce manual 
                     work, improve accuracy, and focus on what matters most—growing their business.
                   </p>
                 </div>
 
                 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* YouTube Video Section - Case Studies & Testimonials */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 border-y border-border">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+                See Our Work in Action
+              </h2>
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto font-[family-name:var(--font-roboto)]">
+                Watch how we've helped businesses like yours transform their operations with AI automation
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border bg-foreground/5">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/AfqLIkPpsc0"
+                  title="Teamdesk AI - Case Studies & Testimonials"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                ></iframe>
+              </div>
+              
+              <div className="mt-8 text-center">
+                <a
+                  href="https://www.youtube.com/watch?v=AfqLIkPpsc0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-accent hover:text-accent-dark font-medium transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  Watch on YouTube
+                </a>
               </div>
             </div>
           </div>
@@ -107,7 +149,7 @@ export default function About() {
                   traditional consulting firms.
                 </p>
                 <p className="text-lg text-foreground/80 font-[family-name:var(--font-roboto)] leading-relaxed">
-                  But we also know that true understanding comes from being there in person. That's why we travel 
+                  But we also know that true understanding comes from being there in person. That&apos;s why we travel 
                   on-site to visit our clients, observe workflows firsthand, and interview your team members. 
                   This hands-on approach ensures we truly understand your business challenges and deliver AI solutions 
                   that seamlessly integrate into your day-to-day operations.
@@ -148,14 +190,14 @@ export default function About() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-lg text-foreground/70 mb-8 font-[family-name:var(--font-roboto)]">
-              Let's discuss how AI and automation can help you achieve your goals.
+              Let&apos;s discuss how AI and automation can help you achieve your goals.
             </p>
-            <a
-              href="/"
+            <Link
+              href="/#get-started"
               className="inline-block bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-xl text-base font-semibold transition-all shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30"
             >
               Get Started Today
-            </a>
+            </Link>
           </div>
         </section>
       </main>
