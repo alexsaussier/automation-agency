@@ -99,7 +99,7 @@ export default function About() {
                 See Our Work in Action
               </h2>
               <p className="text-lg text-foreground/70 max-w-2xl mx-auto font-[family-name:var(--font-roboto)]">
-                Watch how we've helped businesses like yours transform their operations with AI automation
+                Watch how we&apos;ve helped businesses like yours transform their operations with AI automation
               </p>
             </div>
             

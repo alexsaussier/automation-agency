@@ -338,7 +338,7 @@ export default function Home() {
               Get <span className="italic text-accent">in Touch</span>
             </h3>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Let's get on a free discovery call together to see how you can benefit from AI-powered automation.
+              Let&apos;s get on a free discovery call together to see how you can benefit from AI-powered automation.
             </p>
           </div>
 
