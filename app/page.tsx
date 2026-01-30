@@ -99,6 +99,9 @@ export default function Home() {
         </div>
       </section>
 
+      
+
+      
       {/* Features Section */}
       <section id="features" className="py-20 lg:py-28 px-6 lg:px-8 bg-light-gray dark:bg-dark-bg">
         <div className="container mx-auto max-w-6xl">
@@ -107,7 +110,7 @@ export default function Home() {
               Get a free AI audit of your company now
             </h3>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              We offer a free, complete audit of AI opportunities in your company for our new customers.
+              We offer a free, complete audit of AI opportunities in your company for our new customers with less than 20 employees.
             </p>
           </div>
 
@@ -164,7 +167,7 @@ export default function Home() {
                         STEP 2
                       </span>
                       <span className="inline-block px-4 py-1.5 bg-green-500/20 border border-green-500/30 rounded-full text-sm font-bold text-green-600 dark:text-green-400">
-                        FREE
+                        FREE for companies with less than 20 employees
                       </span>
                     </div>
                     <h4 className="text-xl font-bold mb-3">Company AI Audit</h4>
@@ -234,6 +237,94 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Security Section */}
+      <section className="py-20 lg:py-28 px-6 lg:px-8 border-y border-border">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl lg:text-5xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+              Data & AI <span className="italic text-accent">Security</span> Guarantees
+            </h3>
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              Your data security is our top priority. We implement enterprise-grade security measures to protect your business.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Security Feature 1 */}
+            <div className="bg-background rounded-2xl p-8 border border-border hover:border-accent/50 transition-all hover:shadow-lg group">
+              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg className="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+                Strong Environment Isolation
+              </h4>
+              <p className="text-foreground/70 leading-relaxed">
+                Your AI agents run on self-hosted AWS EC2 infrastructure with a dedicated database, encryption key, and credentials store. Access to our systems is restricted using IP allowlisting where applicable.
+              </p>
+            </div>
+
+            {/* Security Feature 2 */}
+            <div className="bg-background rounded-2xl p-8 border border-border hover:border-accent/50 transition-all hover:shadow-lg group">
+              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg className="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+                Secure Credential Management
+              </h4>
+              <p className="text-foreground/70 leading-relaxed">
+                All credentials are stored exclusively using n8n's encrypted credential system and are never hardcoded or stored in plain text.
+              </p>
+            </div>
+
+            {/* Security Feature 3 */}
+            <div className="bg-background rounded-2xl p-8 border border-border hover:border-accent/50 transition-all hover:shadow-lg group">
+              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg className="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+                Data Minimization & Retention
+              </h4>
+              <p className="text-foreground/70 leading-relaxed">
+                Workflow execution data and logs are retained for a maximum of 30 days and automatically deleted thereafter, unless longer retention is explicitly required by the automation logic. We only process the data strictly necessary for the agent to function.
+              </p>
+            </div>
+
+            {/* Security Feature 4 */}
+            <div className="bg-background rounded-2xl p-8 border border-border hover:border-accent/50 transition-all hover:shadow-lg group">
+              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg className="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold mb-4 font-[family-name:var(--font-inter)]">
+                Controlled AI Data Processing
+              </h4>
+              <p className="text-foreground/70 leading-relaxed">
+                We use AI models from established providers (OpenAI and Anthropic) under plans that contractually state that client data is not used for model training. Where available, data sharing and prompt logging features are disabled.
+              </p>
+            </div>
+          </div>
+
+          {/* Additional Security Note */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-accent/10 border border-accent/20 rounded-xl">
+              <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm font-medium text-accent">
+                Built with GDPR principles: data minimization, encryption, and limited retention
+              </span>
             </div>
           </div>
         </div>

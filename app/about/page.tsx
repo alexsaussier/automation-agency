@@ -187,7 +187,7 @@ export default function About() {
         <section className="py-16 lg:py-24 px-6 lg:px-8">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-[family-name:var(--font-inter)]">
-              Ready to Transform Your Business?
+              Book a free discovery call with us
             </h2>
             <p className="text-lg text-foreground/70 mb-8 font-[family-name:var(--font-roboto)]">
               Let&apos;s discuss how AI and automation can help you achieve your goals.
