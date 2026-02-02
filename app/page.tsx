@@ -51,22 +51,57 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side - Decorative cards */}
-            <div className="relative hidden lg:block h-[400px]">
-              <div className="absolute top-0 right-0 w-64 h-48 bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl border border-accent/20 p-6 transform rotate-6 shadow-lg">
-                <div className="w-12 h-12 bg-accent/20 rounded-lg mb-4"></div>
-                <div className="h-3 bg-foreground/10 rounded mb-2"></div>
-                <div className="h-3 bg-foreground/10 rounded w-3/4"></div>
+            {/* Right side - AI Agent Cards */}
+            <div className="relative hidden lg:block h-[500px]">
+              {/* Agent Card 1 - SEO Agent */}
+              <div className="absolute top-0 right-0 w-64 h-56 bg-gradient-to-br from-blue-500/40 to-accent/30 rounded-2xl border border-blue-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="relative w-12 h-12 bg-blue-500/60 rounded-full flex items-center justify-center text-xl">
+                    🤖
+                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">🔍</span>
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm text-foreground">SEO Agent</div>
+                    <div className="text-xs text-foreground/70">Search Optimization</div>
+                  </div>
+                </div>
+                <p className="text-sm text-foreground/80 italic leading-relaxed">
+                  "I improve your SEO ranking automatically by analyzing competitors and optimizing content"
+                </p>
               </div>
-              <div className="absolute top-12 right-12 w-64 h-48 bg-background rounded-2xl border border-border p-6 shadow-xl">
-                <div className="w-12 h-12 bg-accent rounded-lg mb-4 flex items-center justify-center text-white font-bold text-xl">AI</div>
-                <div className="h-3 bg-foreground/20 rounded mb-2"></div>
-                <div className="h-3 bg-foreground/20 rounded w-2/3"></div>
+
+              {/* Agent Card 2 - Customer Support Agent */}
+              <div className="absolute top-32 right-20 w-64 h-56 bg-gradient-to-br from-purple-500/40 to-accent/30 rounded-2xl border border-purple-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-2">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="relative w-12 h-12 bg-purple-500/60 rounded-full flex items-center justify-center text-xl">
+                    🤖
+                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">💬</span>
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm text-foreground">Customer Support Agent</div>
+                    <div className="text-xs text-foreground/70">24/7 Support</div>
+                  </div>
+                </div>
+                <p className="text-sm text-foreground/80 italic leading-relaxed">
+                  "I handle customer inquiries 24/7, resolving 80% of tickets instantly"
+                </p>
               </div>
-              <div className="absolute bottom-0 right-24 w-48 h-40 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl border border-accent/10 p-6 transform -rotate-3 shadow-lg">
-                <div className="w-10 h-10 bg-accent/30 rounded-full mb-3"></div>
-                <div className="h-2 bg-foreground/10 rounded mb-2"></div>
-                <div className="h-2 bg-foreground/10 rounded w-1/2"></div>
+
+              {/* Agent Card 3 - Data Analyst Agent */}
+              <div className="absolute bottom-0 right-40 w-64 h-56 bg-gradient-to-br from-green-500/40 to-accent/30 rounded-2xl border border-green-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-3">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="relative w-12 h-12 bg-green-500/60 rounded-full flex items-center justify-center text-xl">
+                    🤖
+                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">📊</span>
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm text-foreground">Marketing Analyst Agent</div>
+                    <div className="text-xs text-foreground/70">Analytics & Insights</div>
+                  </div>
+                </div>
+                <p className="text-sm text-foreground/80 italic leading-relaxed">
+                  "I monitor the popularity of our marketing campaigns and suggest improvements based on the data"
+                </p>
               </div>
             </div>
           </div>

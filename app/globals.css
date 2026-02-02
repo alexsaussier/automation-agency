@@ -39,3 +39,105 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* Hide scrollbar for scrollable elements */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* AI Agent Card Animations */
+@keyframes rotate-forward-1 {
+  0% {
+    transform: rotate(6deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  25% {
+    transform: rotate(6deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  29% {
+    transform: rotate(6deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+  88% {
+    transform: rotate(6deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+  92% {
+    transform: rotate(6deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  100% {
+    transform: rotate(6deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+}
+
+@keyframes rotate-forward-2 {
+  0%, 29% {
+    transform: rotate(0deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+  33% {
+    transform: rotate(0deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  58% {
+    transform: rotate(0deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  62%, 100% {
+    transform: rotate(0deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+}
+
+@keyframes rotate-forward-3 {
+  0%, 62% {
+    transform: rotate(-3deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+  66% {
+    transform: rotate(-3deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  88% {
+    transform: rotate(-3deg) scale(1);
+    z-index: 30;
+    filter: blur(0px);
+  }
+  92%, 100% {
+    transform: rotate(-3deg) scale(0.95);
+    z-index: 10;
+    filter: blur(1px);
+  }
+}
+
+.animate-rotate-forward-1 {
+  animation: rotate-forward-1 12s ease-in-out infinite;
+}
+
+.animate-rotate-forward-2 {
+  animation: rotate-forward-2 12s ease-in-out infinite;
+}
+
+.animate-rotate-forward-3 {
+  animation: rotate-forward-3 12s ease-in-out infinite;
+}
