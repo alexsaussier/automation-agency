@@ -281,7 +281,7 @@ export default function Home() {
                 Secure Credential Management
               </h4>
               <p className="text-foreground/70 leading-relaxed">
-                All credentials are stored exclusively using n8n's encrypted credential system and are never hardcoded or stored in plain text.
+                All credentials are stored exclusively using n8n&apos;s encrypted credential system and are never hardcoded or stored in plain text.
               </p>
             </div>
 
