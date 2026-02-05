@@ -31,10 +31,11 @@ This is a **Next.js 15 App Router** application built as a lead generation platf
   - `Modal.tsx` - Modal dialog component
 
 **2. API Route Architecture**
-- Single API endpoint: `/api/send-email` (POST)
+- `/api/send-email` (POST) - Main contact form submission endpoint
+- `/api/asics-upload` (POST) - Asics client file upload endpoint for marketing asset research
 - Serverless function pattern
 - Sends form submissions to alexandre@teamdesk.app via SMTP
-- Requires environment variables for SMTP configuration
+- Requires environment variables for SMTP configuration and n8n webhooks
 
 **3. Form Flow Architecture**
 The OnboardingForm implements a **3-step auto-advancing questionnaire**:
@@ -64,12 +65,19 @@ app/
 ├── globals.css          # Global styles and CSS variables
 ├── about/
 │   └── page.tsx         # About page with founder bio
+├── asics/
+│   ├── page.tsx         # Asics marketing asset upload page (client component)
+│   └── README.md        # Asics integration documentation
 └── api/
-    └── send-email/
-        └── route.ts     # Email submission endpoint
+    ├── send-email/
+    │   └── route.ts     # Email submission endpoint
+    └── asics-upload/
+        └── route.ts     # Asics file upload endpoint (n8n integration)
 components/
 ├── OnboardingForm.tsx   # 3-step questionnaire (client component)
-└── Modal.tsx            # Reusable modal (client component)
+├── Modal.tsx            # Reusable modal (client component)
+├── Navbar.tsx           # Navigation component
+└── Footer.tsx           # Footer component
 ```
 
 ## Environment Configuration
@@ -77,12 +85,16 @@ components/
 Required environment variables in `.env.local`:
 
 ```bash
+# Email Configuration
 SMTP_HOST=smtp.gmail.com        # SMTP server hostname
 SMTP_PORT=587                   # Port (587 for TLS, 465 for SSL)
 SMTP_SECURE=false               # true for 465, false for 587
 SMTP_USER=your-email@gmail.com  # SMTP username
 SMTP_PASS=your-app-password     # SMTP password (use App Password for Gmail with 2FA)
 SMTP_FROM=your-email@gmail.com  # Sender email address
+
+# n8n Webhook Configuration (Optional)
+N8N_ASICS_WEBHOOK_URL=https://your-n8n-instance.com/webhook/asics-upload  # Asics upload webhook
 ```
 
 Gmail requires App Passwords if 2FA is enabled. Generate at: https://myaccount.google.com/apppasswords
@@ -151,6 +163,20 @@ Main sections:
 4. Features grid (4 cards with icons)
 5. Get Started section embedding OnboardingForm
 6. Footer
+
+### Asics Page (asics/page.tsx)
+Client-specific marketing asset research page:
+- **Purpose**: Upload interface for Asics marketing team to submit JPG assets for internet usage analysis
+- **Features**:
+  - Drag-and-drop file upload
+  - Multiple file selection
+  - JPG/JPEG filtering
+  - File size display
+  - Real-time file list management
+- **Branding**: Styled with Asics official brand color (#000066 blue)
+- **Integration**: Connects to `/api/asics-upload` endpoint for n8n workflow trigger
+- **File Format**: Converts files to base64 for webhook transmission
+- **n8n Replacement**: Replaces "on form submission" node in existing workflow
 
 ## Important Context
 
