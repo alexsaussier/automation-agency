@@ -4,6 +4,7 @@ export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
     const files: File[] = [];
+    const campaignName = formData.get('campaignName') as string;
     
     // Extract all files from the form data
     for (const [key, value] of formData.entries()) {
@@ -19,7 +20,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log(`Received ${files.length} files for processing:`);
+    if (!campaignName) {
+      return NextResponse.json(
+        { error: 'Campaign name is required' },
+        { status: 400 }
+      );
+    }
+
+    console.log(`Received ${files.length} files for campaign "${campaignName}":`);
     files.forEach((file, index) => {
       console.log(`${index + 1}. ${file.name} (${file.size} bytes)`);
     });
@@ -28,7 +36,9 @@ export async function POST(request: NextRequest) {
     const n8nFormData = new FormData();
     
     // Add metadata fields
+    n8nFormData.append('campaignName', campaignName);
     n8nFormData.append('timestamp', new Date().toISOString());
+    n8nFormData.append('filesCount', files.length.toString());
     n8nFormData.append('filenames', JSON.stringify(files.map(f => f.name)));
     
     // Add each file as binary data

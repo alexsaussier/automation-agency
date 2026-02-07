@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 export default function AsicsPage() {
   const [files, setFiles] = useState<File[]>([]);
+  const [campaignName, setCampaignName] = useState('');
   const [isDragging, setIsDragging] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
 
@@ -44,11 +45,12 @@ export default function AsicsPage() {
   };
 
   const handleSubmit = async () => {
-    if (files.length === 0) return;
+    if (files.length === 0 || !campaignName.trim()) return;
     
     setIsUploading(true);
     
     const formData = new FormData();
+    formData.append('campaignName', campaignName);
     files.forEach((file, index) => {
       formData.append(`file${index}`, file);
     });
@@ -116,6 +118,22 @@ export default function AsicsPage() {
               Drop the assets (jpg) that you want to analyze. We will search the internet for 
               exact matches of these assets and provide you a report of their usage.
             </p>
+          </div>
+
+          {/* Campaign Name Input */}
+          <div className="mb-8">
+            <label htmlFor="campaignName" className="block text-lg font-semibold text-[#000066] mb-3">
+              Campaign Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="campaignName"
+              value={campaignName}
+              onChange={(e) => setCampaignName(e.target.value)}
+              placeholder="e.g., Summer 2026 Launch"
+              className="w-full px-6 py-4 rounded-xl border-2 border-[#000066]/20 focus:border-[#000066] focus:outline-none focus:ring-2 focus:ring-[#000066]/20 text-base transition-all"
+              required
+            />
           </div>
 
           {/* Upload Area */}
@@ -237,7 +255,7 @@ export default function AsicsPage() {
                 <div className="mt-6 flex justify-center">
                   <button
                     onClick={handleSubmit}
-                    disabled={isUploading}
+                    disabled={isUploading || !campaignName.trim()}
                     className="bg-[#000066] hover:bg-[#000066]/90 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
                   >
                     {isUploading ? (

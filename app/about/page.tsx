@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Inspiration: https://catalis-temlis.webflow.io/home/home-v1
 export default function About() {
@@ -29,24 +30,13 @@ export default function About() {
               {/* Photo */}
               <div className="order-1 lg:order-1">
                 <div className="relative aspect-square rounded-2xl overflow-hidden bg-light-gray dark:bg-dark-bg border border-border">
-                  {/* Placeholder - Replace with actual image */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 rounded-full bg-accent/10 mx-auto mb-4 flex items-center justify-center">
-                        <span className="text-6xl font-bold text-accent">AS</span>
-                      </div>
-                      <p className="text-sm text-foreground/60">Add your photo here</p>
-                    </div>
-                  </div>
-                  {/* Uncomment and add your image path:
                   <Image
-                    src="/images/alexandre-saussier.jpg"
+                    src="/alex.jpg"
                     alt="Alexandre Saussier"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
                   />
-                  */}
                 </div>
               </div>
 
