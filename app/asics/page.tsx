@@ -85,7 +85,7 @@ export default function AsicsPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
               <Image 
-                src="/asics-logo.png" 
+                src="/ASICS_Corporation_logo.png" 
                 alt="ASICS Logo" 
                 width={120} 
                 height={40}
