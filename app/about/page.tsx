@@ -26,17 +26,19 @@ export default function About() {
         {/* Founder Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8">
           <div className="container mx-auto max-w-5xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-[300px_1fr] gap-12 items-start">
               {/* Photo */}
               <div className="order-1 lg:order-1">
-                <div className="relative aspect-square rounded-2xl overflow-hidden bg-light-gray dark:bg-dark-bg border border-border">
-                  <Image
-                    src="/alex.jpg"
-                    alt="Alexandre Saussier"
-                    fill
-                    className="object-cover object-top"
-                    priority
-                  />
+                <div className="flex justify-center">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden bg-light-gray dark:bg-dark-bg border-4 border-accent/20 shadow-xl">
+                    <Image
+                      src="/alex.jpg"
+                      alt="Alexandre Saussier"
+                      fill
+                      className="object-cover object-top"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
 
