@@ -11,7 +11,9 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-xl font-semibold font-[family-name:var(--font-inter)]">
-              Teamdesk AI
+              <span className="text-accent">
+                {process.env.NEXT_PUBLIC_COMPANY_NAME}
+              </span>
             </h1>
           </div>
           <div className="hidden md:flex items-center gap-8">

@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
     // Format the email content
     const emailContent = `
-      <h2>New Lead from Teamdesk AI Onboarding Form</h2>
+      <h2>New Lead from ${process.env.NEXT_PUBLIC_COMPANY_NAME} Onboarding Form</h2>
 
       <h3>Business Information:</h3>
       <ul>

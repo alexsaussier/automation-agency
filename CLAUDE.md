@@ -180,8 +180,8 @@ Client-specific marketing asset research page:
 
 ## Important Context
 
-- **Brand**: Teamdesk AI - AI-powered automation agency
-- **Owner**: Alexandre Saussier (alexandre@teamdesk.app)
+- **Brand**: BrightBots - AI-powered automation agency
+- **Owner**: Alexandre Saussier (alexandre@BrightBots.io)
 - **Design Inspiration**: Catalis Webflow Template
 - **Purpose**: Lead generation through interactive questionnaire
 - **No authentication/database**: Submissions sent directly via email

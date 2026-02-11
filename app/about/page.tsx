@@ -15,7 +15,7 @@ export default function About() {
         <section className="py-16 lg:py-24 px-6 lg:px-8 border-b border-border">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 font-[family-name:var(--font-inter)]">
-              About <span className="text-accent">Teamdesk AI</span>
+              About <span className="text-accent">{process.env.NEXT_PUBLIC_COMPANY_NAME}</span>
             </h1>
             <p className="text-xl text-foreground/70 font-[family-name:var(--font-roboto)]">
               Transforming businesses through intelligent automation and AI-powered solutions
@@ -55,7 +55,7 @@ export default function About() {
 
                 <div className="space-y-4 text-foreground/80 font-[family-name:var(--font-roboto)]">
                   <p>
-                    Alexandre Saussier is the founder of Teamdesk AI, bringing deep expertise in artificial intelligence 
+                    Alexandre Saussier is the founder of {process.env.NEXT_PUBLIC_COMPANY_NAME}, bringing deep expertise in artificial intelligence 
                     and intelligent automation to help businesses streamline their operations and unlock new efficiencies.
                   </p>
 
@@ -71,7 +71,7 @@ export default function About() {
 
                   <p>
                     A graduate of McGill University with a degree in Finance and Computer Science, Alexandre has 
-                    worked across multiple continents including Montreal, London, and Monaco. Through Teamdesk AI, 
+                    worked across multiple countries including Canada, United Kingdom, and Monaco. Through {process.env.NEXT_PUBLIC_COMPANY_NAME}, 
                     he&apos;s dedicated to helping businesses of all sizes leverage intelligent automation to reduce manual 
                     work, improve accuracy, and focus on what matters most—growing their business.
                   </p>
@@ -101,7 +101,7 @@ export default function About() {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/AfqLIkPpsc0"
-                  title="Teamdesk AI - Case Studies & Testimonials"
+                  title={process.env.NEXT_PUBLIC_COMPANY_NAME + " - Case Studies & Testimonials"}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full"

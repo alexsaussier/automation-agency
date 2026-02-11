@@ -305,7 +305,7 @@ export default function AsicsPage() {
       <footer className="bg-[#000066]/5 py-8 px-6 lg:px-8 border-t border-[#000066]/20">
         <div className="container mx-auto max-w-6xl text-center">
           <p className="text-sm text-foreground/60">
-            Powered by <span className="font-semibold text-[#000066]">Teamdesk AI</span> • Secure & Confidential
+            Powered by <span className="font-semibold text-[#000066]">{process.env.NEXT_PUBLIC_COMPANY_NAME}</span> • Secure & Confidential
           </p>
         </div>
       </footer>

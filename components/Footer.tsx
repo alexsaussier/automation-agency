@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-foreground/60">
-            &copy; 2026 Teamdesk AI. All rights reserved.
+            &copy; 2026 {process.env.NEXT_PUBLIC_COMPANY_NAME}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#privacy" className="text-sm text-foreground/60 hover:text-accent transition-colors">

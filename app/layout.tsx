@@ -15,7 +15,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Teamdesk AI - AI-Powered Business Automation",
+  title: `${process.env.NEXT_PUBLIC_COMPANY_NAME} - AI-Powered Business Automation`,
   description: "Transform your business operations with AI-powered automation solutions tailored to your needs.",
 };
 
