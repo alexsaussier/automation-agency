@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 interface NavbarProps {
-  activePage?: 'home' | 'about';
+  activePage?: 'home' | 'about' | 'blog';
 }
 
 export default function Navbar({ activePage = 'home' }: NavbarProps) {
@@ -17,26 +17,37 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
             </h1>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className={`text-sm transition-colors ${
-                activePage === 'home' 
-                  ? 'text-accent font-semibold' 
+                activePage === 'home'
+                  ? 'text-accent font-semibold'
                   : 'hover:text-accent'
               }`}
             >
               Home
             </Link>
-            
-            <Link 
-              href="/about" 
+
+            <Link
+              href="/about"
               className={`text-sm transition-colors ${
-                activePage === 'about' 
-                  ? 'text-accent font-semibold' 
+                activePage === 'about'
+                  ? 'text-accent font-semibold'
                   : 'hover:text-accent'
               }`}
             >
               About
+            </Link>
+
+            <Link
+              href="/blog"
+              className={`text-sm transition-colors ${
+                activePage === 'blog'
+                  ? 'text-accent font-semibold'
+                  : 'hover:text-accent'
+              }`}
+            >
+              Blog
             </Link>
           </div>
           <a href="/#get-started" className="bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
