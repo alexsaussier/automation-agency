@@ -96,6 +96,28 @@ const TOPICS = [
   { title: 'AI for Property Inspections: Automated Reports, Photo Analysis, and Compliance Checks', category: 'Real Estate' },
   { title: 'How Spas and Wellness Centers Use AI to Increase Repeat Business', category: 'Beauty & Wellness' },
   { title: 'AI for Language Schools: Automate Enrollment, Scheduling, and Student Progress Tracking', category: 'Education' },
+
+  // ── Enterprise & multi-tool workflow integration ────────────────────────
+  { title: 'How Law Firms Are Connecting Slack, Email, and Their CMS with AI to Never Miss a Deadline', category: 'Workflow Integration' },
+  { title: 'The Connected Office: How AI Ties Together Slack, Email, and Your Project Management Tools', category: 'Workflow Integration' },
+  { title: 'From Inbox to Action: How AI Agents Route Emails into Slack, Notion, and Your CRM Automatically', category: 'Workflow Integration' },
+  { title: 'How to Build a Single Source of Truth Across Tools with AI Workflow Automation', category: 'Workflow Integration' },
+  { title: 'Slack as Your Command Center: How AI Can Trigger Actions Across Every Tool Your Team Uses', category: 'Workflow Integration' },
+  { title: 'Connecting Your CRM, Email, and Calendar with AI: The End of Copying and Pasting', category: 'Workflow Integration' },
+  { title: 'How AI Workflow Agents Replace the Manual Work Between Your Business Tools', category: 'Workflow Integration' },
+  { title: 'Legal Workflow Automation: How Law Firms Connect Their Document Systems, Email, and Billing Tools', category: 'Legal' },
+  { title: 'Multi-Tool Automation for Consultancies: Syncing Client Portals, Emails, and Invoicing with AI', category: 'Workflow Integration' },
+  { title: 'How Office Teams at Growing Companies Automate Approvals Across Email, Slack, and ERP Systems', category: 'Workflow Integration' },
+  { title: 'AI Agents That Sit Between Your Tools: The New Way Teams Eliminate Repetitive Hand-offs', category: 'Workflow Integration' },
+  { title: 'From Contract Signed to Project Kicked Off: Automating the Handover Workflow with AI', category: 'Workflow Integration' },
+  { title: 'How to Automate Your Client Onboarding Across HubSpot, Slack, and Google Drive with AI', category: 'Workflow Integration' },
+  { title: 'The Notification Problem: How AI Cuts Down on Tool Overload by Routing Alerts Intelligently', category: 'Workflow Integration' },
+  { title: 'How Growing SMEs Use AI to Stitch Together Their Tech Stack Without Hiring More Ops Staff', category: 'Workflow Integration' },
+  { title: 'AI-Powered Meeting Follow-ups: From Transcript to Tasks in Notion, Slack, and Your CRM', category: 'Workflow Integration' },
+  { title: 'How Real Estate Agencies Connect Their CRM, Email, and Document Tools with AI Workflows', category: 'Real Estate' },
+  { title: 'Automated Reporting Pipelines: How AI Pulls Data from Multiple Tools and Delivers a Single Digest', category: 'Analytics' },
+  { title: 'How HR Teams Use AI to Connect Applicant Tracking, Slack Onboarding, and Payroll Tools Seamlessly', category: 'Human Resources' },
+  { title: 'The Ops Team of the Future: Using AI Agents to Orchestrate Work Across Your Entire Tool Stack', category: 'Workflow Integration' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -148,12 +170,22 @@ async function main() {
   const state = loadState();
 
   const systemPrompt = `You are a content writer for BrightBots, a boutique AI automation agency.
-Write expert, practical blog articles about AI automation aimed at small and medium-sized business owners.
-Your target reader runs a business with fewer than 100 employees, is not technical, and is time-poor.
-They are curious about AI but don't know where to start and worry about cost and complexity.
-Your writing style: clear, direct, reassuring, and concrete. Use specific numbers and real-world examples.
-Never use jargon without explaining it. Focus on business outcomes (time saved, cost reduced, revenue gained) not technology.
-Speak to a single reader — write "you" not "businesses". Make them feel the solution is within reach.`;
+Write expert, practical blog articles about AI automation. You write for two types of readers — adapt based on the article topic:
+
+1. SMB owners (restaurants, clinics, retail, etc.): non-technical, time-poor, fewer than 100 employees.
+   They worry about cost and complexity. Make them feel AI is within reach. Reassuring, concrete, outcome-focused.
+
+2. Office & enterprise workflow readers (law firms, consultancies, growing SMEs): they already use multiple tools
+   (Slack, email, CRM, project management, CMS) and are frustrated by manual hand-offs between them.
+   They are slightly more tech-aware but still not developers. They want efficiency and fewer dropped balls.
+   Show them how AI agents can sit between tools and automate the glue work.
+
+For both audiences:
+- Write "you", not "businesses" or "companies" — address the reader directly
+- Use specific numbers, time savings, and real-world examples
+- Never use jargon without a plain-English explanation
+- Focus on business outcomes: time saved, errors eliminated, revenue protected
+- Keep it practical: readers should finish the article knowing exactly what to do next`;
 
   for (let i = 0; i < count; i++) {
     const topic = TOPICS[state.currentIndex % TOPICS.length];
