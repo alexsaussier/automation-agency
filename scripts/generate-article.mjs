@@ -118,6 +118,105 @@ const TOPICS = [
   { title: 'Automated Reporting Pipelines: How AI Pulls Data from Multiple Tools and Delivers a Single Digest', category: 'Analytics' },
   { title: 'How HR Teams Use AI to Connect Applicant Tracking, Slack Onboarding, and Payroll Tools Seamlessly', category: 'Human Resources' },
   { title: 'The Ops Team of the Future: Using AI Agents to Orchestrate Work Across Your Entire Tool Stack', category: 'Workflow Integration' },
+
+  // ── Tool-specific integrations (high search volume) ─────────────────────
+  { title: 'Zapier vs AI Agents: Which Is Right for Your Business?', category: 'Workflow Integration' },
+  { title: 'How to Automate Your HubSpot CRM with AI: Less Data Entry, More Selling', category: 'Workflow Integration' },
+  { title: 'Microsoft 365 and AI Automation: Making Teams, Outlook, and SharePoint Work Together', category: 'Workflow Integration' },
+  { title: 'Google Workspace Automation: How AI Connects Gmail, Calendar, Drive, and Sheets', category: 'Workflow Integration' },
+  { title: 'Notion + AI: How to Turn Your Workspace into a Self-Updating Knowledge Hub', category: 'Workflow Integration' },
+  { title: 'How to Automate Monday.com with AI: Projects That Update Themselves', category: 'Workflow Integration' },
+  { title: 'Airtable + AI Agents: Turning Your Database into an Automated Workflow Engine', category: 'Workflow Integration' },
+  { title: 'Salesforce Automation with AI: Beyond What the Platform Does Out of the Box', category: 'Workflow Integration' },
+  { title: 'Pipedrive + AI: Never Let a Lead Go Cold Again', category: 'Sales' },
+  { title: 'Make vs AI Agents: Understanding the Difference and When to Use Each', category: 'Workflow Integration' },
+  { title: 'Connecting Shopify, Your Email Platform, and CRM with AI Workflows', category: 'E-commerce' },
+  { title: 'QuickBooks + AI: Automating the Accounting Work Behind Your Business', category: 'Accounting' },
+  { title: 'Xero + AI: How to Automate Your Bookkeeping, Invoicing, and Cash Flow Alerts', category: 'Accounting' },
+  { title: 'How AI Ties Together Your Project Management, Time Tracking, and Invoicing Tools', category: 'Workflow Integration' },
+  { title: 'Automating Your Google Ads, Analytics, and Reporting Pipeline with AI', category: 'Marketing' },
+
+  // ── Industries not yet covered ───────────────────────────────────────────
+  { title: 'AI Automation for Architecture Firms: From RFI to Project Handover Without the Admin', category: 'Architecture' },
+  { title: 'How PR Agencies Use AI to Monitor Coverage, Draft Releases, and Report to Clients', category: 'PR & Communications' },
+  { title: 'AI for Wealth Management: Automating Client Communication and Portfolio Reporting', category: 'Finance' },
+  { title: 'AI for Home Services Businesses: Booking, Dispatch, and Follow-up on Autopilot', category: 'Home Services' },
+  { title: 'AI Automation for Management Consulting Firms: Research, Proposals, and Client Reporting', category: 'Consulting' },
+  { title: 'How Franchise Businesses Use AI to Standardize Operations Across Every Location', category: 'Franchise' },
+  { title: 'Interior Design Firms Using AI to Automate Client Proposals and Project Updates', category: 'Interior Design' },
+  { title: 'AI for Media Companies: Automating Content Distribution, Tagging, and Rights Management', category: 'Media' },
+  { title: 'How Cleaning and Facilities Management Companies Use AI to Schedule and Track Work', category: 'Facilities' },
+  { title: 'AI for Private Equity and Investment Firms: Automating Deal Flow and Portfolio Monitoring', category: 'Finance' },
+  { title: 'AI for Landscaping and Garden Service Companies: Win More Jobs, Spend Less Time on Admin', category: 'Home Services' },
+  { title: 'SaaS Companies Using AI to Automate Customer Onboarding and Reduce Churn', category: 'IT & Tech' },
+  { title: 'AI for Recruitment Agencies: Automate Candidate Sourcing, Screening, and Client Updates', category: 'Human Resources' },
+  { title: 'How Translation and Localization Agencies Use AI to Automate the Admin and Scale Output', category: 'Professional Services' },
+  { title: 'AI for Physiotherapy and Allied Health Clinics: Automate Bookings, Notes, and Follow-ups', category: 'Healthcare' },
+
+  // ── Educational / definitional (heavily cited by AI search engines) ──────
+  { title: 'What Is an AI Agent? A Plain-English Guide for Business Owners', category: 'AI Explained' },
+  { title: 'What Is Workflow Automation? (And Why It Is Different from What You Probably Think)', category: 'AI Explained' },
+  { title: 'AI Agents vs Chatbots: What Is the Difference and Which One Does Your Business Need?', category: 'AI Explained' },
+  { title: 'RPA vs AI Agents: Why the New Generation of Automation Is Far More Flexible', category: 'AI Explained' },
+  { title: 'What Does an AI Automation Agency Actually Do — And Do You Need One?', category: 'AI Explained' },
+  { title: 'The 7 Types of Business Tasks AI Can Fully Automate Today', category: 'AI Explained' },
+  { title: 'How AI Agents Actually Work: A No-Jargon Explanation for Business Owners', category: 'AI Explained' },
+  { title: 'What Is a Trigger-Based Workflow? The Concept Behind Every Great Automation', category: 'AI Explained' },
+  { title: 'What Is Agentic AI? Why the Next Wave of Automation Goes Far Beyond Simple Rules', category: 'AI Explained' },
+  { title: 'AI Automation vs Traditional Software: Why the Difference Matters for Your Business', category: 'AI Explained' },
+
+  // ── Buyer-intent / ROI / cost (attract people actively evaluating) ───────
+  { title: 'How Much Does AI Automation Cost for a Small Business? A Realistic Breakdown', category: 'Getting Started' },
+  { title: 'AI Automation ROI: What to Realistically Expect in Your First Year', category: 'Getting Started' },
+  { title: 'Build vs Buy vs Outsource: How to Choose the Right AI Automation Approach', category: 'Getting Started' },
+  { title: 'When Does Hiring Make More Sense Than Automating? An Honest Guide', category: 'Getting Started' },
+  { title: 'How Long Does It Take to Implement AI Automation in a Small Business?', category: 'Getting Started' },
+  { title: 'The Hidden Cost of Not Automating: What Manual Work Actually Costs Your Business', category: 'Getting Started' },
+  { title: 'AI Automation on a Budget: What You Can Realistically Achieve for Under €1,000 a Month', category: 'Getting Started' },
+  { title: 'How to Calculate the ROI of an AI Automation Project Before You Commit', category: 'Getting Started' },
+  { title: 'Questions to Ask Before Hiring an AI Automation Agency', category: 'Getting Started' },
+  { title: 'How to Write an AI Automation Brief: What to Tell an Agency to Get the Best Results', category: 'Getting Started' },
+
+  // ── Pain-point / problem-driven (match how people actually search) ────────
+  { title: 'Why Your Team Is Still Copying Data Between Tools — And How to Stop It for Good', category: 'Productivity' },
+  { title: 'The Real Reason Your Client Onboarding Feels Chaotic — And How AI Fixes It', category: 'Operations' },
+  { title: 'Why Leads Go Cold: How Inconsistent Follow-up Costs You Sales and How AI Solves It', category: 'Sales' },
+  { title: 'If Your Business Runs on Spreadsheets, Here Is What AI Can Replace Today', category: 'Operations' },
+  { title: 'Why Your Team Hates Status Update Meetings — And How AI Can Replace Them', category: 'Productivity' },
+  { title: 'The Cost of Inbox Overload: How Unread Emails Are Slowing Your Entire Business Down', category: 'Productivity' },
+  { title: 'When You Are the Bottleneck: How AI Agents Help Founders Delegate Without Hiring', category: 'Small Business' },
+  { title: 'Why Important Tasks Keep Getting Pushed Back — And How Automation Forces Them to Happen', category: 'Productivity' },
+  { title: 'The Hidden Reason Your Projects Keep Running Late (It Is Not What You Think)', category: 'Operations' },
+  { title: 'Too Many Tools, Not Enough Time: How AI Tames Your Overloaded Tech Stack', category: 'Workflow Integration' },
+
+  // ── End-to-end workflow patterns (enterprise search terms) ───────────────
+  { title: 'Quote to Cash: How AI Automates the Entire Sales-to-Payment Pipeline', category: 'Workflow Integration' },
+  { title: 'Procure to Pay: How AI Handles Purchase Requests, Approvals, and Vendor Payments', category: 'Workflow Integration' },
+  { title: 'Hire to Onboard: Automating Every Step from Offer Letter to Day-One Productivity', category: 'Human Resources' },
+  { title: 'Lead to Close: How AI Keeps Every Deal Moving Without Constant Manual Follow-up', category: 'Sales' },
+  { title: 'Issue to Resolution: How AI Routes, Escalates, and Closes Support Tickets Automatically', category: 'Customer Service' },
+  { title: 'The Monthly Close Workflow: How AI Goes from Raw Data to Board-Ready Report', category: 'Accounting' },
+  { title: 'The Client Renewal Workflow: How AI Ensures You Never Let a Contract Lapse Silently', category: 'Operations' },
+  { title: 'Order to Fulfilment: How AI Connects Your Sales Channel, Warehouse, and Courier', category: 'Operations' },
+
+  // ── Solopreneur & founder angle ──────────────────────────────────────────
+  { title: 'AI as Your First Employee: What to Automate Before You Make Your First Hire', category: 'Small Business' },
+  { title: 'The Solopreneur AI Stack: How One Person Can Run a Business That Feels Much Bigger', category: 'Small Business' },
+  { title: 'Scaling Without Hiring: How AI Lets Small Teams Handle Enterprise-Level Volume', category: 'Small Business' },
+  { title: 'How to Protect Your Weekends: The Automations Every Small Business Owner Should Have', category: 'Small Business' },
+  { title: 'Delegating to AI: A Practical Guide to Deciding What to Automate First', category: 'Getting Started' },
+
+  // ── Emerging / forward-looking ───────────────────────────────────────────
+  { title: 'AI Knowledge Management: How to Make Sure Expertise Does Not Leave When People Do', category: 'Operations' },
+  { title: 'Competitive Intelligence on Autopilot: How AI Monitors Your Market While You Work', category: 'Strategy' },
+  { title: 'Voice AI for Small Business: How Phone Calls Are Being Automated Without Losing the Human Touch', category: 'Customer Service' },
+  { title: 'How AI Is Changing Internal Communication: Less Noise, Better Signal Across Your Team', category: 'Productivity' },
+  { title: 'The Future of the Back Office: What AI Automation Means for Admin-Heavy Businesses', category: 'Operations' },
+  { title: 'How AI Agents Are Replacing Entire Categories of SaaS Subscriptions', category: 'AI Explained' },
+  { title: 'AI for Business Continuity: How Automation Keeps Things Running When Your Team Cannot', category: 'Operations' },
+  { title: 'How to Build a Content Repurposing Machine with AI: One Article, Ten Formats', category: 'Marketing' },
+  { title: 'Email Marketing Automation That Actually Feels Personal: The AI Approach', category: 'Marketing' },
+  { title: 'AI-Powered Competitive Pricing: How Small Businesses Can React to Market Changes Automatically', category: 'Strategy' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -155,6 +254,71 @@ function today() {
 }
 
 // ---------------------------------------------------------------------------
+// Topic regeneration — called when all topics have been used once
+// ---------------------------------------------------------------------------
+async function regenerateTopics(client) {
+  console.log('All topics used. Generating a fresh batch with AI...');
+
+  const usedTitles = TOPICS.map((t) => `- ${t.title}`).join('\n');
+
+  const message = await client.messages.create({
+    model: 'claude-sonnet-4-6',
+    max_tokens: 4096,
+    messages: [
+      {
+        role: 'user',
+        content: `You are a content strategist for BrightBots, a boutique AI automation agency.
+
+BrightBots targets two audiences:
+1. SMB owners (restaurants, clinics, retail, law firms, real estate, etc.) with fewer than 100 employees who want to save time with AI
+2. Office teams and growing SMEs already using multiple tools (Slack, CRM, email, project management) who want to automate the glue work between them
+
+Generate exactly 80 new blog article topics for BrightBots that are different from the ones already written.
+Focus on SEO value, AI search discoverability, and genuine usefulness to the target audiences.
+Cover a diverse mix of: industries, use cases, tool-specific integrations, educational explainers, pain-point-driven angles, ROI/cost questions, and workflow patterns.
+
+Articles already written (do NOT repeat these):
+${usedTitles}
+
+Return ONLY a valid JSON array, no other text. Each item must have "title" and "category" fields.
+Example format:
+[
+  {"title": "How Plumbers Use AI to Automate Job Scheduling and Customer Follow-ups", "category": "Home Services"},
+  {"title": "What Is a Webhook? The Building Block of Every Modern Automation", "category": "AI Explained"}
+]`,
+      },
+    ],
+  });
+
+  const raw = message.content[0].type === 'text' ? message.content[0].text : '';
+  // Extract JSON array from the response (handle any surrounding text)
+  const jsonMatch = raw.match(/\[[\s\S]*\]/);
+  if (!jsonMatch) {
+    throw new Error('Could not parse topic list from Claude response.');
+  }
+
+  const newTopics = JSON.parse(jsonMatch[0]);
+  if (!Array.isArray(newTopics) || newTopics.length === 0) {
+    throw new Error('Claude returned an empty topic list.');
+  }
+
+  // Append new topics to the script file itself
+  const scriptPath = fileURLToPath(import.meta.url);
+  const scriptContent = fs.readFileSync(scriptPath, 'utf-8');
+  const insertionPoint = scriptContent.lastIndexOf('];');
+  const topicsBlock =
+    '\n\n  // ── Auto-generated fresh batch ─────────────────────────────────────────\n' +
+    newTopics.map((t) => `  { title: ${JSON.stringify(t.title)}, category: ${JSON.stringify(t.category)} },`).join('\n') +
+    '\n';
+  const updatedScript =
+    scriptContent.slice(0, insertionPoint) + topicsBlock + scriptContent.slice(insertionPoint);
+  fs.writeFileSync(scriptPath, updatedScript);
+
+  console.log(`Added ${newTopics.length} new topics to the script.`);
+  return newTopics.length;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
@@ -168,6 +332,16 @@ async function main() {
 
   const count = parseInt(process.env.ARTICLE_COUNT || '1', 10);
   const state = loadState();
+
+  // If we've used all topics, regenerate before continuing
+  if (state.currentIndex >= TOPICS.length) {
+    const added = await regenerateTopics(client);
+    console.log(`Topic list refreshed with ${added} new topics. Continuing...`);
+    // Re-import isn't possible in ESM, but TOPICS is already in scope —
+    // the newly appended entries will be picked up on the NEXT daily run.
+    // For this run, reset index to 0 so we start the new batch immediately.
+    state.currentIndex = 0;
+  }
 
   const systemPrompt = `You are a content writer for BrightBots, a boutique AI automation agency.
 Write expert, practical blog articles about AI automation. You write for two types of readers — adapt based on the article topic:
