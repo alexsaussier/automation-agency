@@ -55,18 +55,15 @@ export default function About() {
 
                 <div className="space-y-4 text-foreground/80 font-[family-name:var(--font-roboto)]">
                   <p>
-                    Alexandre Saussier is the founder of {process.env.NEXT_PUBLIC_COMPANY_NAME}, bringing deep expertise in artificial intelligence 
-                    and intelligent automation to help businesses streamline their operations and unlock new efficiencies.
+                    Alexandre Saussier is the founder of {process.env.NEXT_PUBLIC_COMPANY_NAME}, an intelligent automation agency
+                    that helps businesses of all types automate their operations with AI agents.
                   </p>
 
                   <p>
                     As a former Consultant at Deloitte&apos;s Omnia AI practice, Alexandre specialized in AI 
-                    Automation consulting, building large-scale solutions for some of the biggest companies and institutions in Canada. 
-                  </p>
-
-                  <p>
-                    With certifications as a Blue Prism Certified Developer and UiPath Certified RPA Associate, 
-                    Alexandre combines technical proficiency with strategic consulting experience.
+                    Automation consulting, building large-scale solutions for some of the biggest companies and institutions in Canada.
+                    He holds professional certifications in the Intelligent Automation field (Blue Prism Certified Developer, UiPath Certified RPA Associate)
+                    and strong automation project experience with institutions in the banking and insurance industries.
                   </p>
 
                   <p>
