@@ -108,15 +108,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* Trusted By Section */}
+      {/* Trusted By Section - Hidden */}
+      {/* 
       <section className="py-16 px-6 lg:px-8 border-y border-border bg-foreground/[0.02]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-center text-sm font-medium text-foreground/60 uppercase tracking-wider mb-12">
             They use our AI agents
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-            {/* Logo placeholders - replace with actual company logos */}
             <div className="flex items-center justify-center w-32 h-16 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all">
               <Image 
                 src="/LOGO-DL-DELFORGE-300.png" 
@@ -133,6 +132,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       
 

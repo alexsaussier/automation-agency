@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface NavbarProps {
   activePage?: 'home' | 'about' | 'blog';
@@ -7,15 +8,18 @@ interface NavbarProps {
 export default function Navbar({ activePage = 'home' }: NavbarProps) {
   return (
     <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
-      <nav className="container mx-auto px-6 lg:px-8 py-4">
+      <nav className="container mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <h1 className="text-xl font-semibold font-[family-name:var(--font-inter)]">
-              <span className="text-accent">
-                {process.env.NEXT_PUBLIC_COMPANY_NAME}
-              </span>
-            </h1>
-          </div>
+          <Link href="/" className="flex items-center gap-1">
+            <Image 
+              src="/logo_dark.jpeg" 
+              alt="Teamdesk AI Logo" 
+              width={50} 
+              height={50}
+              className="object-contain"
+            />
+            
+          </Link>
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
