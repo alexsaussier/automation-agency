@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllPosts();
+  const posts = getAllPosts().slice(0, 18);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -96,7 +96,7 @@ export default function BlogPage() {
       </main>
 
       {/* CTA */}
-      <section className="py-16 px-6 lg:px-8 bg-light-gray dark:bg-dark-bg border-t border-border">
+      <section className="py-16 px-6 lg:px-8 bg-light-gray border-t border-border">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-inter)]">
             Ready to automate your business?

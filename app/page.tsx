@@ -138,7 +138,7 @@ export default function Home() {
 
       
       {/* Features Section */}
-      <section id="features" className="py-20 lg:py-28 px-6 lg:px-8 bg-light-gray dark:bg-dark-bg">
+      <section id="features" className="py-20 lg:py-28 px-6 lg:px-8 bg-light-gray">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h3 className="text-4xl lg:text-5xl font-bold mb-4 font-[family-name:var(--font-inter)]">
@@ -166,7 +166,7 @@ export default function Home() {
                       <span className="inline-block px-3 py-1 bg-foreground/5 rounded-full text-xs font-semibold text-foreground/60">
                         STEP 1
                       </span>
-                      <span className="inline-block px-4 py-1.5 bg-green-500/20 border border-green-500/30 rounded-full text-sm font-bold text-green-600 dark:text-green-400">
+                      <span className="inline-block px-4 py-1.5 bg-green-500/20 border border-green-500/30 rounded-full text-sm font-bold text-green-600">
                         FREE
                       </span>
                     </div>
@@ -201,7 +201,7 @@ export default function Home() {
                       <span className="inline-block px-3 py-1 bg-foreground/5 rounded-full text-xs font-semibold text-foreground/60">
                         STEP 2
                       </span>
-                      <span className="inline-block px-4 py-1.5 bg-green-500/20 border border-green-500/30 rounded-full text-sm font-bold text-green-600 dark:text-green-400">
+                      <span className="inline-block px-4 py-1.5 bg-green-500/20 border border-green-500/30 rounded-full text-sm font-bold text-green-600">
                         FREE for companies with less than 20 employees
                       </span>
                     </div>
@@ -378,7 +378,7 @@ export default function Home() {
           </div>
 
           {/* Questionnaire */}
-          <div className="bg-light-gray dark:bg-dark-bg rounded-2xl p-8 lg:p-12 border border-border shadow-xl">
+          <div className="bg-light-gray rounded-2xl p-8 lg:p-12 border border-border shadow-xl">
             <OnboardingForm />
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function About() {
               {/* Photo */}
               <div className="order-1 lg:order-1">
                 <div className="flex justify-center">
-                  <div className="relative w-64 h-64 rounded-full overflow-hidden bg-light-gray dark:bg-dark-bg border-4 border-accent/20 shadow-xl">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden bg-light-gray border-4 border-accent/20 shadow-xl">
                     <Image
                       src="/alex.jpg"
                       alt="Alexandre Saussier"
@@ -123,7 +123,7 @@ export default function About() {
         </section>
 
         {/* Where and How We Work Section */}
-        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-light-gray dark:bg-dark-bg border-y border-border">
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-light-gray border-y border-border">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center font-[family-name:var(--font-inter)]">
               Where and How We Work

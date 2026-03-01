@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
 
         {/* CTA */}
-        <section className="py-16 px-6 lg:px-8 border-t border-border bg-light-gray dark:bg-dark-bg">
+        <section className="py-16 px-6 lg:px-8 border-t border-border bg-light-gray">
           <div className="container mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-inter)]">
               Want to automate your business?

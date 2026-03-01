@@ -22,6 +22,7 @@
   --font-body: var(--font-roboto);
 }
 
+/* Dark mode disabled temporarily
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0f1419;
@@ -29,7 +30,7 @@
     --light-gray: #1a1f26;
     --border-color: #2a2f36;
   }
-}
+} */
 
 body {
   background: var(--background);

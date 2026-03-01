@@ -149,7 +149,7 @@ export default function OnboardingForm() {
             </div>
             <div className="relative max-h-[500px]">
               {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
               
               {/* Scrollable container */}
               <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
@@ -168,7 +168,7 @@ export default function OnboardingForm() {
               </div>
               
               {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
             </div>
           </div>
         )}
@@ -185,7 +185,7 @@ export default function OnboardingForm() {
             </div>
             <div className="relative max-h-[500px]">
               {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
               
               {/* Scrollable container */}
               <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
@@ -204,7 +204,7 @@ export default function OnboardingForm() {
               </div>
               
               {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
             </div>
           </div>
         )}
@@ -221,7 +221,7 @@ export default function OnboardingForm() {
             </div>
             <div className="relative max-h-[500px]">
               {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
               
               {/* Scrollable container */}
               <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
@@ -247,7 +247,7 @@ export default function OnboardingForm() {
               </div>
               
               {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray dark:from-dark-bg to-transparent pointer-events-none z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
             </div>
 
             <div className="pt-4">
