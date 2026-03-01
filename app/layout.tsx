@@ -14,9 +14,93 @@ const roboto = Roboto({
   weight: ["400", "500", "600"],
 });
 
+const BASE_URL = "https://www.brightbots.io";
+
 export const metadata: Metadata = {
-  title: `${process.env.NEXT_PUBLIC_COMPANY_NAME} - AI-Powered Business Automation`,
-  description: "Transform your business operations with AI-powered automation solutions tailored to your needs.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: `${process.env.NEXT_PUBLIC_COMPANY_NAME} - AI Automation Agency Monaco`,
+    template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME}`,
+  },
+  description:
+    "BrightBots is an AI automation agency helping businesses eliminate repetitive work with custom AI agents and workflow automation.",
+  keywords: [
+    "AI automation Agency",
+    "automatisation IA Monaco",
+    "AI agency Monaco",
+    "workflow automation Monaco",
+    "AI agents Monaco",
+    "business automation Monaco",
+    "automatisation entreprise Monaco",
+    "BrightBots",
+  ],
+  authors: [{ name: "Alexandre Saussier", url: BASE_URL }],
+  creator: "BrightBots",
+  publisher: "BrightBots",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: BASE_URL,
+    siteName: "BrightBots",
+    title: "BrightBots - AI Automation Agency",
+    description: "Custom AI agents and workflow automation for businesses.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BrightBots - AI Automation Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BrightBots - AI Automation Agency",
+    description:
+      "Custom AI agents and workflow automation for businesses.",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  other: {
+    "geo.region": "MC",
+    "geo.placename": "Monaco",
+    "geo.position": "43.738418;7.401688",
+    ICBM: "43.738418, 7.401688",
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "BrightBots",
+  description:
+    "AI automation agency based in Monaco specialising in custom AI agents and workflow automation for businesses.",
+  url: BASE_URL,
+  logo: `${BASE_URL}/logo.png`,
+  image: `${BASE_URL}/og-image.png`,
+  telephone: "",
+  email: "alexandre@brightbots.io",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Monaco",
+    addressCountry: "MC",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 43.738418,
+    longitude: 7.401688,
+  },
+  areaServed: [
+    { "@type": "Country", name: "Monaco" },
+    { "@type": "City", name: "Nice" },
+    { "@type": "City", name: "Cannes" },
+    { "@type": "City", name: "Antibes" },
+  ],
+  serviceType: "AI Automation",
+  priceRange: "$$",
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -26,9 +110,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${roboto.variable} antialiased`}
-      >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
+      <body className={`${inter.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>
