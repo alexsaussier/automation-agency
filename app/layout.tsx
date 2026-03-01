@@ -14,7 +14,7 @@ const roboto = Roboto({
   weight: ["400", "500", "600"],
 });
 
-const BASE_URL = "https://www.brightbots.io";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.brightbots.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -81,7 +81,7 @@ const localBusinessSchema = {
   logo: `${BASE_URL}/logo.png`,
   image: `${BASE_URL}/og-image.png`,
   telephone: "",
-  email: "alexandre@brightbots.io",
+  email: "alex@brightbots.io",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Monaco",

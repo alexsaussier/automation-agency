@@ -34,7 +34,7 @@ This is a **Next.js 15 App Router** application built as a lead generation platf
 - `/api/send-email` (POST) - Main contact form submission endpoint
 - `/api/asics-upload` (POST) - Asics client file upload endpoint for marketing asset research
 - Serverless function pattern
-- Sends form submissions to alexandre@teamdesk.app via SMTP
+- Sends form submissions to alex@brightbots.io via SMTP
 - Requires environment variables for SMTP configuration and n8n webhooks
 
 **3. Form Flow Architecture**
@@ -132,7 +132,7 @@ Gmail requires App Passwords if 2FA is enabled. Generate at: https://myaccount.g
 - Success: `{ "success": true }` (200)
 - Error: `{ "error": "Failed to send email" }` (500)
 
-**Email sent to:** alexandre@teamdesk.app
+**Email sent to:** alex@brightbots.io
 
 **Implementation notes:**
 - Uses Nodemailer with SMTP transport

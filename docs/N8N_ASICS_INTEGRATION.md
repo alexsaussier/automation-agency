@@ -200,6 +200,6 @@ return {
 ## Support
 
 For issues or questions:
-- Email: alexandre@teamdesk.app
+- Email: alex@brightbots.io
 - Check n8n logs: Settings > Executions
 - Review Next.js logs: `npm run dev` output

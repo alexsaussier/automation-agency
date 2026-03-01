@@ -10,6 +10,18 @@ interface FormData {
   otherPainPoint: string;
 }
 
+function ScrollableOptions({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="relative max-h-[500px]">
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10" />
+      <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
+        {children}
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10" />
+    </div>
+  );
+}
+
 export default function OnboardingForm() {
   const [step, setStep] = useState(1);
   const [displayStep, setDisplayStep] = useState(1);
@@ -116,12 +128,15 @@ export default function OnboardingForm() {
         alert('Thank you! We\'ve received your information and will get back to you soon.');
         setShowModal(false);
         setAdditionalInfo('');
+        setFormData({ businessType: '', businessSize: '', painPoint: '', otherPainPoint: '' });
+        setStep(1);
+        setDisplayStep(1);
       } else {
-        alert('There was an error sending your information. Please try again or contact us directly at alexandre@teamdesk.app');
+        alert('There was an error sending your information. Please try again or contact us directly at alex@brightbots.io');
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('There was an error sending your information. Please try again or contact us directly at alexandre@teamdesk.app');
+      alert('There was an error sending your information. Please try again or contact us directly at alex@brightbots.io');
     } finally {
       setIsSending(false);
     }
@@ -147,29 +162,20 @@ export default function OnboardingForm() {
                 Help us understand your business to provide you tailored advice.
               </p>
             </div>
-            <div className="relative max-h-[500px]">
-              {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
-              
-              {/* Scrollable container */}
-              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
-                {businessTypes.map((type) => (
-                  <button
-                    key={type}
-                    onClick={() => handleBusinessTypeSelect(type)}
-                    disabled={isTransitioning}
-                    className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
-                  >
-                    <span className="text-base font-medium group-hover:text-accent transition-colors">
-                      {type}
-                    </span>
-                  </button>
-                ))}
-              </div>
-              
-              {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
-            </div>
+            <ScrollableOptions>
+              {businessTypes.map((type) => (
+                <button
+                  key={type}
+                  onClick={() => handleBusinessTypeSelect(type)}
+                  disabled={isTransitioning}
+                  className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
+                >
+                  <span className="text-base font-medium group-hover:text-accent transition-colors">
+                    {type}
+                  </span>
+                </button>
+              ))}
+            </ScrollableOptions>
           </div>
         )}
 
@@ -183,29 +189,20 @@ export default function OnboardingForm() {
                 This helps us recommend the right scale of automation solutions.
               </p>
             </div>
-            <div className="relative max-h-[500px]">
-              {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
-              
-              {/* Scrollable container */}
-              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
-                {businessSizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => handleBusinessSizeSelect(size)}
-                    disabled={isTransitioning}
-                    className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
-                  >
-                    <span className="text-base font-medium group-hover:text-accent transition-colors">
-                      {size}
-                    </span>
-                  </button>
-                ))}
-              </div>
-              
-              {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
-            </div>
+            <ScrollableOptions>
+              {businessSizes.map((size) => (
+                <button
+                  key={size}
+                  onClick={() => handleBusinessSizeSelect(size)}
+                  disabled={isTransitioning}
+                  className="group relative w-full p-6 rounded-xl border-2 border-border transition-all text-left bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 disabled:opacity-50 disabled:cursor-not-allowed focus:border-accent focus:scale-105"
+                >
+                  <span className="text-base font-medium group-hover:text-accent transition-colors">
+                    {size}
+                  </span>
+                </button>
+              ))}
+            </ScrollableOptions>
           </div>
         )}
 
@@ -219,36 +216,25 @@ export default function OnboardingForm() {
                 Select the areas where you spend the most effort, or tell us about something else.
               </p>
             </div>
-            <div className="relative max-h-[500px]">
-              {/* Top gradient fade */}
-              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-gray to-transparent pointer-events-none z-10"></div>
-              
-              {/* Scrollable container */}
-              <div className="overflow-y-auto max-h-[500px] px-4 py-8 scroll-smooth space-y-4 scrollbar-hide">
-                {painPoints.map((point) => (
-                  <button
-                    key={point}
-                    onClick={() => handlePainPointSelect(point)}
-                    className={`group relative w-full p-6 rounded-xl border-2 transition-all text-left ${
-                      formData.painPoint === point
-                        ? 'border-accent bg-accent text-white shadow-lg shadow-accent/20'
-                        : 'border-border bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10'
-                    }`}
-                  >
-                    <span className={`text-base font-medium transition-colors ${
-                      formData.painPoint === point
-                        ? ''
-                        : 'group-hover:text-accent'
-                    }`}>
-                      {point}
-                    </span>
-                  </button>
-                ))}
-              </div>
-              
-              {/* Bottom gradient fade */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-gray to-transparent pointer-events-none z-10"></div>
-            </div>
+            <ScrollableOptions>
+              {painPoints.map((point) => (
+                <button
+                  key={point}
+                  onClick={() => handlePainPointSelect(point)}
+                  className={`group relative w-full p-6 rounded-xl border-2 transition-all text-left ${
+                    formData.painPoint === point
+                      ? 'border-accent bg-accent text-white shadow-lg shadow-accent/20'
+                      : 'border-border bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10'
+                  }`}
+                >
+                  <span className={`text-base font-medium transition-colors ${
+                    formData.painPoint === point ? '' : 'group-hover:text-accent'
+                  }`}>
+                    {point}
+                  </span>
+                </button>
+              ))}
+            </ScrollableOptions>
 
             <div className="pt-4">
               <label htmlFor="other" className="block text-base font-medium mb-3 font-[family-name:var(--font-inter)]">

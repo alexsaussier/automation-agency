@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
   try {
@@ -85,6 +86,20 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Error processing upload:', error);
+    try {
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: parseInt(process.env.SMTP_PORT || '587'),
+        secure: process.env.SMTP_SECURE === 'true',
+        auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+      });
+      await transporter.sendMail({
+        from: process.env.SMTP_FROM || process.env.SMTP_USER,
+        to: 'alex@brightbots.io',
+        subject: '[BrightBots] Error: Asics upload failed',
+        html: `<p>Asics file upload API failed at ${new Date().toISOString()}.</p><p><strong>Error:</strong> ${error instanceof Error ? error.message : String(error)}</p>`,
+      });
+    } catch { /* ignore alert failure */ }
     return NextResponse.json(
       { error: error instanceof Error ? error.message : 'Failed to process upload' },
       { status: 500 }

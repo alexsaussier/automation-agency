@@ -13,7 +13,7 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
           <Link href="/" className="flex items-center gap-1">
             <Image 
               src="/logo_dark.jpeg" 
-              alt="Teamdesk AI Logo" 
+              alt="BrightBots Logo"
               width={50} 
               height={50}
               className="object-contain"

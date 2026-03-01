@@ -50,6 +50,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error sending email:', error);
+    try {
+      const alertTransporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: parseInt(process.env.SMTP_PORT || '587'),
+        secure: process.env.SMTP_SECURE === 'true',
+        auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+      });
+      await alertTransporter.sendMail({
+        from: process.env.SMTP_FROM || process.env.SMTP_USER,
+        to: 'alex@brightbots.io',
+        subject: '[BrightBots] Error: Lead form email failed',
+        html: `<p>Lead form submission failed at ${new Date().toISOString()}.</p><p><strong>Error:</strong> ${error instanceof Error ? error.message : String(error)}</p>`,
+      });
+    } catch { /* ignore alert failure */ }
     return NextResponse.json(
       { error: 'Failed to send email' },
       { status: 500 }

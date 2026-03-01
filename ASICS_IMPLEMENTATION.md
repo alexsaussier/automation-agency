@@ -168,7 +168,7 @@ Before deploying to production:
 
 ### Contact
 For issues or questions:
-- **Developer**: Contact via alexandre@teamdesk.app
+- **Developer**: Contact via alex@brightbots.io
 - **Documentation**: See `docs/N8N_ASICS_INTEGRATION.md`
 - **n8n Workflow**: Access n8n dashboard to review executions
 
