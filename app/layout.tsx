@@ -115,6 +115,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="ed2acdee-412d-4f84-bead-1cf49d6ba786"
+        />
       </head>
       <body className={`${inter.variable} ${roboto.variable} antialiased`}>
         {children}
