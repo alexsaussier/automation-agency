@@ -55,7 +55,7 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
             </Link>
           </div>
           <a href="/#get-started" className="bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
-            Get Started
+            Get in touch
           </a>
         </div>
       </nav>
