@@ -1,5 +1,6 @@
 ---
 title: "Automated Business Reporting: Get the Insights You Need Without Building Dashboards"
+description: "Get daily insights without building dashboards: AI pulls and analyzes data from all your systems automatically."
 date: "2026-02-25"
 excerpt: "Every Monday morning, someone in your business spends 45 minutes pulling numbers from three different places — your CRM, your accounting software, your spreadsheet — copying them into a report that..."
 category: "Analytics"

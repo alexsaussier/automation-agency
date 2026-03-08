@@ -1,5 +1,6 @@
 ---
 title: "AI Sales Forecasting: How Small Businesses Can Predict Revenue with Confidence"
+description: "Forecast revenue with confidence using AI analysis of your pipeline, past performance, and market trends."
 date: "2026-02-25"
 excerpt: "Running a small business often means making big financial decisions based on gut instinct and rough mental maths. You glance at last month's numbers, think about what's in the pipeline, and make yo..."
 category: "Sales"

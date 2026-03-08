@@ -1,5 +1,6 @@
 ---
 title: "How to Build a Single Source of Truth Across Tools with AI Workflow Automation"
+description: "End the hunt for the correct client data. One AI-powered system keeps your CRM, Slack, and email perfectly synced always."
 date: "2026-03-04"
 excerpt: "If you've ever chased down the \"right\" version of a client record — checking Slack, then your CRM, then an email thread, then a spreadsheet a colleague shared six months ago — you already know the ..."
 category: "Workflow Integration"

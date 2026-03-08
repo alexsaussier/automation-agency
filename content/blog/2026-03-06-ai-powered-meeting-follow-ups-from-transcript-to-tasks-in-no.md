@@ -1,5 +1,6 @@
 ---
 title: "AI-Powered Meeting Follow-ups: From Transcript to Tasks in Notion, Slack, and Your CRM"
+description: "Capture every meeting decision instantly. AI transcribes meetings and automatically creates tasks in Notion, Slack, and your CRM—perfectly organized."
 date: "2026-03-06"
 excerpt: "You finish the meeting feeling good. The conversation was sharp, the ideas were flowing, and you left with a clear sense of what needed to happen next. Then Monday arrives. Someone didn't get the m..."
 category: "Workflow Integration"

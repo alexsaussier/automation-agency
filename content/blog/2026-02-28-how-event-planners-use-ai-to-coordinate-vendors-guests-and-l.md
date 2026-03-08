@@ -1,5 +1,6 @@
 ---
 title: "How Event Planners Use AI to Coordinate Vendors, Guests, and Logistics"
+description: "Events need vendors coordinated, guests answered, logistics managed simultaneously. AI handles all communications and timing."
 date: "2026-02-28"
 excerpt: "Running an event is like conducting an orchestra where half the musicians haven't met each other, the venue keeps changing the setlist, and your guests are texting you questions from three differen..."
 category: "Events"

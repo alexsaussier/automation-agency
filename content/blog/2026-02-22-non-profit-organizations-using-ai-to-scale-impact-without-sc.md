@@ -1,5 +1,6 @@
 ---
 title: "Non-Profit Organizations Using AI to Scale Impact Without Scaling Headcount"
+description: "Scale your impact without hiring. AI handles donor communications, volunteer coordination, grant tracking, and reporting instantly."
 date: "2026-02-22"
 excerpt: "Running a non-profit means doing more with less — always. You're managing donor relationships, coordinating volunteers, writing grant applications, tracking programme outcomes, and reporting back t..."
 category: "Non-Profit"

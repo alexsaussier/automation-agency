@@ -1,5 +1,6 @@
 ---
 title: "Notion + AI: How to Turn Your Workspace into a Self-Updating Knowledge Hub"
+description: "Stop manually updating Notion. AI automatically syncs data across your workspace, keeping projects, wikis, and databases current without lifting a finger."
 date: "2026-03-08"
 excerpt: "Your Notion workspace probably looks great in theory. Organised databases, neat project pages, a company wiki that someone spent three days building in January. But here's the reality for most team..."
 category: "Workflow Integration"

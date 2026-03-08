@@ -1,5 +1,6 @@
 ---
 title: "How Growing SMEs Use AI to Stitch Together Their Tech Stack Without Hiring More Ops Staff"
+description: "Scale without scaling your ops team. AI stitches together your entire tech stack so data flows automatically between every tool you use."
 date: "2026-03-06"
 excerpt: "You hired your project management tool to track work. Your CRM to manage clients. Your accounting software to handle invoices. Your helpdesk to field support tickets. What you didn't hire — but som..."
 category: "Workflow Integration"

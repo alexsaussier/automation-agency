@@ -1,5 +1,6 @@
 ---
 title: "AI for Dental Practices: Automate Reminders, Billing, and Treatment Plans"
+description: "Reminders, insurance claims, and billing drain your practice's time. AI automates admin so dentists focus on patient care."
 date: "2026-02-28"
 excerpt: "Running a dental practice means juggling clinical care with an exhausting volume of admin work — appointment reminders, insurance claims, billing follow-ups, and treatment plan documentation that s..."
 category: "Healthcare"

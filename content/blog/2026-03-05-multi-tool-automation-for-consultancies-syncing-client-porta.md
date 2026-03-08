@@ -1,5 +1,6 @@
 ---
 title: "Multi-Tool Automation for Consultancies: Syncing Client Portals, Emails, and Invoicing with AI"
+description: "Eliminate consultancy admin bottlenecks. AI syncs client portals, emails, and invoicing so you stop chasing down missing information and unpaid invoices."
 date: "2026-03-05"
 excerpt: "If you run a consultancy, you already know the feeling: a client emails to ask about their project status, their invoice is sitting unpaid in your accounting software, and the update they need is b..."
 category: "Workflow Integration"

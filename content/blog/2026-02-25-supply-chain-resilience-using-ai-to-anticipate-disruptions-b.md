@@ -1,5 +1,6 @@
 ---
 title: "Supply Chain Resilience: Using AI to Anticipate Disruptions Before They Happen"
+description: "Anticipate supply chain disruptions weeks ahead with AI monitoring, avoiding stockouts and emergency freight costs."
 date: "2026-02-25"
 excerpt: "You don't find out your key supplier has gone quiet until the shelves are already empty. By then, you're on the phone trying to source alternatives, paying premium freight rates, and explaining to ..."
 category: "Logistics"

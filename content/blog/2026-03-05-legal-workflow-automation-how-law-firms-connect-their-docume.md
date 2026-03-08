@@ -1,5 +1,6 @@
 ---
 title: "Legal Workflow Automation: How Law Firms Connect Their Document Systems, Email, and Billing Tools"
+description: "Cut billable hours wasted on admin work. AI connects your document systems, email, and billing—so fee-earners focus on client work, not data entry."
 date: "2026-03-05"
 excerpt: "Every hour your fee-earners spend copying client details from an email into your practice management system, then manually updating a billing entry, then chasing a document that should have been fi..."
 category: "Legal"

@@ -1,5 +1,6 @@
 ---
 title: "Accounting Automation: Close the Books Faster with AI-Powered Month-End Processing"
+description: "Month-end close expands with your business. AI automates reconciliation and processing—close the books in days, not weeks."
 date: "2026-03-03"
 excerpt: "Month-end close is one of those processes that feels like it should get easier over time — but for most growing businesses, it doesn't. Instead, it expands. More transactions, more reconciliation s..."
 category: "Accounting"

@@ -1,5 +1,6 @@
 ---
 title: "AI for Trucking Companies: Driver Scheduling, Route Optimization, and Compliance"
+description: "Manage drivers, loads, and compliance rules daily. AI schedules optimally, reroutes on the fly, and tracks regulations."
 date: "2026-03-01"
 excerpt: "Running a trucking company means you're managing a moving puzzle every single day — drivers calling in sick, loads that need to be rerouted on the fly, and a compliance rulebook that seems to grow ..."
 category: "Logistics"

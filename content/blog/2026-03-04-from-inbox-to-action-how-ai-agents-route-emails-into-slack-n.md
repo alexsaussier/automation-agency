@@ -1,5 +1,6 @@
 ---
 title: "From Inbox to Action: How AI Agents Route Emails into Slack, Notion, and Your CRM Automatically"
+description: "Every email request now flows directly into Slack, Notion, and your CRM. Stop emails from disappearing under the pile."
 date: "2026-03-04"
 excerpt: "Every email-heavy team has the same quiet productivity leak. A client request lands in someone's inbox, gets mentally flagged as \"important,\" and then disappears under seventeen other messages whil..."
 category: "Workflow Integration"

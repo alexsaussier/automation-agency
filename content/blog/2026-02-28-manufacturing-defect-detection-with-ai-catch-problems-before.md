@@ -1,5 +1,6 @@
 ---
 title: "Manufacturing Defect Detection with AI: Catch Problems Before They Reach Customers"
+description: "One defective product costs returns, replacements, and lost trust. AI vision catches defects instantly before shipping."
 date: "2026-02-28"
 excerpt: "One defective product reaching a customer can cost you far more than the item itself. There's the return to process, the replacement to ship, the review they leave, and the trust you spend months r..."
 category: "Manufacturing"

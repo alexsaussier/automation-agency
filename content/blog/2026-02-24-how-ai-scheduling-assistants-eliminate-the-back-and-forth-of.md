@@ -1,5 +1,6 @@
 ---
 title: "How AI Scheduling Assistants Eliminate the Back-and-Forth of Meeting Planning"
+description: "Book meetings in seconds, not minutes. AI scheduling assistant handles all the back-and-forth email exchanges."
 date: "2026-02-24"
 excerpt: "If you've ever spent 20 minutes exchanging emails just to lock in a 30-minute meeting, you already know the problem. \"Does Tuesday work?\" \"Tuesday's out, how about Thursday?\" \"Thursday morning or a..."
 category: "Productivity"

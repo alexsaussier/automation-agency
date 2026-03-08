@@ -1,5 +1,6 @@
 ---
 title: "Healthcare Administration: How AI Reduces Paperwork Burden for Medical Staff"
+description: "GPs and nurses reclaim 10+ hours weekly with AI handling admin tasks, letting staff focus on patient care."
 date: "2026-02-27"
 excerpt: "The average GP spends 2 hours every day on administrative tasks — that's roughly 10 hours a week that isn't spent with patients. For nurses, practice managers, and clinic coordinators, the situatio..."
 category: "Healthcare"

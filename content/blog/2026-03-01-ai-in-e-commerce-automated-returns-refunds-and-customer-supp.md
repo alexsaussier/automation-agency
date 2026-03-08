@@ -1,5 +1,6 @@
 ---
 title: "AI in E-commerce: Automated Returns, Refunds, and Customer Support"
+description: "47 unread messages about refunds and returns? AI routes them, processes refunds, and updates customers automatically."
 date: "2026-03-01"
 excerpt: "Every e-commerce store owner knows the feeling: it's Monday morning, your inbox has 47 unread messages, and at least 30 of them are customers asking where their refund is. Returns and customer supp..."
 category: "E-commerce"

@@ -1,5 +1,6 @@
 ---
 title: "Automated Reporting Pipelines: How AI Pulls Data from Multiple Tools and Delivers a Single Digest"
+description: "Replace the Monday morning data grind. AI pulls numbers from every tool and delivers one clean report—no spreadsheet wrestling required."
 date: "2026-03-07"
 excerpt: "Every Monday morning, someone on your team spends 90 minutes copy-pasting numbers from your CRM, your project management tool, your finance dashboard, and your support inbox into a single spreadshe..."
 category: "Analytics"

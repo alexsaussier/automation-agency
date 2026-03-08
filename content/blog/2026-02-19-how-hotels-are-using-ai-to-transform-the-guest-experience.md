@@ -1,5 +1,6 @@
 ---
 title: "How Hotels Are Using AI to Transform the Guest Experience"
+description: "AI personalizes every guest stay before arrival. Hotels boost satisfaction and revenue with automated preferences, recommendations, and seamless check-ins."
 date: "2026-02-19"
 excerpt: "A guest checks in after a red-eye flight, exhausted and hungry. Before they even reach the front desk, their room is already set to their preferred temperature, a late-night snack recommendation ha..."
 category: "Hospitality"

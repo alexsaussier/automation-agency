@@ -1,5 +1,6 @@
 ---
 title: "How Office Teams at Growing Companies Automate Approvals Across Email, Slack, and ERP Systems"
+description: "Speed up approvals from days to minutes. AI routes purchase orders and requests through email, Slack, and your ERP system without manual routing."
 date: "2026-03-05"
 excerpt: "Every growing company hits the same wall. Approvals that used to take a quick desk-side conversation now bounce between email threads, Slack messages, and finance systems for days. A purchase order..."
 category: "Workflow Integration"

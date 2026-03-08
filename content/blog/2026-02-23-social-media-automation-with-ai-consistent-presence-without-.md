@@ -1,5 +1,6 @@
 ---
 title: "Social Media Automation with AI: Consistent Presence Without the Work"
+description: "Stop losing social media momentum. AI posts consistently across channels, engages followers, and maintains your presence—without daily manual work."
 date: "2026-02-23"
 excerpt: "If you've ever stared at a blank content calendar on a Monday morning, knowing you should have posted three times last week and didn't, you're not alone. Social media is one of those tasks that fee..."
 category: "Marketing"

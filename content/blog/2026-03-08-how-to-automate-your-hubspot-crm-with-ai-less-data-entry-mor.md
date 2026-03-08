@@ -1,5 +1,6 @@
 ---
 title: "How to Automate Your HubSpot CRM with AI: Less Data Entry, More Selling"
+description: "Free your sales team from data entry hell. AI keeps HubSpot updated automatically—so reps spend time selling, not copying and pasting."
 date: "2026-03-08"
 excerpt: "Your sales team didn't join your company to spend 40% of their day copy-pasting email addresses, updating deal stages, and logging call notes. Yet that's exactly what's happening in most HubSpot-po..."
 category: "Workflow Integration"

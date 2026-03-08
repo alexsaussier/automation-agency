@@ -1,5 +1,6 @@
 ---
 title: "Financial Advisors Using AI to Automate Client Reporting and Onboarding"
+description: "Stop manual reporting. AI pulls portfolio data, generates client reviews, and automates onboarding—free up 8+ hours weekly."
 date: "2026-02-22"
 excerpt: "If you run a financial advisory practice, you already know the feeling: it's Thursday afternoon, you have three client reviews on Friday, and you're still manually pulling portfolio data into sprea..."
 category: "Finance"

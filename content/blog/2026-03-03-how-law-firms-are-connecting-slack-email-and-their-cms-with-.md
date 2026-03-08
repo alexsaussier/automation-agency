@@ -1,5 +1,6 @@
 ---
 title: "How Law Firms Are Connecting Slack, Email, and Their CMS with AI to Never Miss a Deadline"
+description: "Missed deadlines cost law firms clients and lawsuits. AI syncs Slack, email, and your CMS to catch every critical date."
 date: "2026-03-03"
 excerpt: "Missing a filing deadline doesn't just cost a law firm a client — it can trigger a malpractice claim, a regulatory investigation, and reputational damage that takes years to repair. Yet in most fir..."
 category: "Workflow Integration"

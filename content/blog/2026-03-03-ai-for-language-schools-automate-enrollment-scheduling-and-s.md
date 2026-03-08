@@ -1,5 +1,6 @@
 ---
 title: "AI for Language Schools: Automate Enrollment, Scheduling, and Student Progress Tracking"
+description: "Language schools juggle enrollment, scheduling, and tracking. AI automates all three so you focus on teaching quality."
 date: "2026-03-03"
 excerpt: "Running a language school means juggling a surprisingly complex mix of moving parts — new student inquiries, placement tests, timetable clashes, teacher availability, and the constant need to track..."
 category: "Education"

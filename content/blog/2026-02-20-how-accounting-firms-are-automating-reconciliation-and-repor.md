@@ -1,5 +1,6 @@
 ---
 title: "How Accounting Firms Are Automating Reconciliation and Reporting with AI"
+description: "Free up senior time. AI reconciles accounts, pulls statements, generates reports, and handles data entry—eliminate busywork monthly."
 date: "2026-02-20"
 excerpt: "Every month, somewhere in your firm, a senior accountant is spending hours doing work that adds zero value to your clients. They're downloading bank statements, copying figures into spreadsheets, c..."
 category: "Accounting"

@@ -1,5 +1,6 @@
 ---
 title: "Document Management Automation: Never Lose a File or Miss a Deadline Again"
+description: "Organize all files, auto-tag documents, and never miss a deadline again with intelligent document management."
 date: "2026-02-25"
 excerpt: "You already know the feeling. It's 4:55pm and a client is waiting on a signed contract. You know you saved it somewhere — maybe in the email thread, maybe in the shared drive, maybe in that folder ..."
 category: "Operations"

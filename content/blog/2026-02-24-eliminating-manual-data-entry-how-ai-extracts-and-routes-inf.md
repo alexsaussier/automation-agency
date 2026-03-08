@@ -1,5 +1,6 @@
 ---
 title: "Eliminating Manual Data Entry: How AI Extracts and Routes Information Automatically"
+description: "Stop copying data between systems. AI extracts information from emails and PDFs and routes it automatically."
 date: "2026-02-24"
 excerpt: "Every week, someone on your team is copying information from an email into a spreadsheet, re-typing a client's details from a PDF into your CRM, or manually forwarding a supplier invoice to the acc..."
 category: "Operations"

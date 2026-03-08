@@ -1,5 +1,6 @@
 ---
 title: "AI Customer Feedback Analysis: Turn Reviews into Actionable Improvements"
+description: "AI reads hundreds of reviews weekly, spots patterns, and highlights exactly what needs fixing in your business."
 date: "2026-02-25"
 excerpt: "Every week, your customers are telling you exactly what's broken in your business — and most of that feedback sits unread in a spreadsheet, buried in a Google Reviews tab, or scattered across three..."
 category: "Customer Experience"

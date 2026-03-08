@@ -1,5 +1,6 @@
 ---
 title: "How Schools and Universities Are Automating Administrative Work with AI"
+description: "Cut administrative chaos by 60%. AI processes enrollment, answers parent questions, handles payments, and schedules staff automatically."
 date: "2026-02-22"
 excerpt: "Between managing enrolment paperwork, answering repetitive parent queries, processing fee payments, and keeping on top of staff scheduling, educational institutions carry an enormous administrative..."
 category: "Education"

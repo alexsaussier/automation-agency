@@ -1,5 +1,6 @@
 ---
 title: "AI Agents That Sit Between Your Tools: The New Way Teams Eliminate Repetitive Hand-offs"
+description: "Eliminate the gaps between your tools. AI agents handle routine hand-offs automatically so your team focuses on work that actually matters."
 date: "2026-03-05"
 excerpt: "Every team has them — those invisible gaps between tools where work quietly falls apart. A lead comes in through your website form, someone has to copy it into the CRM, then ping the sales rep on S..."
 category: "Workflow Integration"

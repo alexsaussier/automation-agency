@@ -1,5 +1,6 @@
 ---
 title: "How HR Teams Use AI to Connect Applicant Tracking, Slack Onboarding, and Payroll Tools Seamlessly"
+description: "Hire faster with zero admin overhead. AI connects your ATS, Slack, and payroll so onboarding happens automatically from day one."
 date: "2026-03-07"
 excerpt: "Hiring a new employee involves a surprisingly long chain of admin work that most HR teams handle manually — and that means errors, delays, and a lot of copy-pasting between systems. The average HR ..."
 category: "Human Resources"

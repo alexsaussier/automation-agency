@@ -1,5 +1,6 @@
 ---
 title: "How AI Workflow Agents Replace the Manual Work Between Your Business Tools"
+description: "Kill invisible work gaps between tools. AI agents sit between your systems and handle every repetitive hand-off your team does manually every single day."
 date: "2026-03-05"
 excerpt: "Every day, your team does work that nobody hired them to do. Someone copies a lead from a web form into the CRM. Someone else sends a Slack message to let the project manager know a contract was si..."
 category: "Workflow Integration"

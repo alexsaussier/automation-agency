@@ -1,5 +1,6 @@
 ---
 title: "Restaurant Menu Optimization with AI: Increase Margins and Reduce Waste"
+description: "AI analyzes your menu to cut food costs, reduce waste, and boost profit margins without cutting portions or quality."
 date: "2026-02-27"
 excerpt: "Every week, your menu is quietly draining money — through dishes that cost too much to make, ingredients that spoil before they're used, and specials that don't sell but still take up prep time. Mo..."
 category: "Restaurants & Food Service"

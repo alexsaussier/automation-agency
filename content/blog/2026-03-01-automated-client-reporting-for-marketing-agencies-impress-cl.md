@@ -1,5 +1,6 @@
 ---
 title: "Automated Client Reporting for Marketing Agencies: Impress Clients and Save Time"
+description: "Monday mornings mean hours pulling data from five platforms. AI generates polished client reports while you have coffee."
 date: "2026-03-01"
 excerpt: "Every Monday morning, someone at your agency sits down to manually pull data from Google Analytics, Meta Ads Manager, and your email platform, paste it all into a spreadsheet, format it, write the ..."
 category: "Marketing"

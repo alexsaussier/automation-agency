@@ -1,5 +1,6 @@
 ---
 title: "Automating Invoice Processing with AI: From Receipt to Payment in Minutes"
+description: "Turn invoice chaos into a 5-minute process. AI extracts data, matches POs, routes approvals, and files automatically—no manual data entry."
 date: "2026-02-23"
 excerpt: "Every invoice that lands in your inbox is a small time bomb. It needs to be found, opened, checked against a purchase order, coded to the right account, approved by the right person, and filed — al..."
 category: "Finance"

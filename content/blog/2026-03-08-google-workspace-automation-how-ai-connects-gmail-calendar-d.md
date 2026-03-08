@@ -1,5 +1,6 @@
 ---
 title: "Google Workspace Automation: How AI Connects Gmail, Calendar, Drive, and Sheets"
+description: "Turn Google Workspace into a unified system. AI connects Gmail, Calendar, Drive, and Sheets so information flows automatically between tools."
 date: "2026-03-08"
 excerpt: "If you run your business on Google Workspace, you already have four of the most powerful productivity tools available: Gmail, Calendar, Google Drive, and Google Sheets. The problem isn't the tools ..."
 category: "Workflow Integration"

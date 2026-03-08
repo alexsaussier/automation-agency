@@ -1,5 +1,6 @@
 ---
 title: "AI-Powered Guest Communication for Hotels: From Booking to Checkout"
+description: "Missed guest messages mean bad reviews and lost upsells. AI responds instantly to requests from booking through checkout."
 date: "2026-02-28"
 excerpt: "Every missed guest message is a missed opportunity — and in hospitality, the margin for error is razor thin. A slow response to a room upgrade request, a forgotten pre-arrival email, or a checkout ..."
 category: "Hospitality"

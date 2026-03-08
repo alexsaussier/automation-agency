@@ -1,5 +1,6 @@
 ---
 title: "AI for Real Estate Agents: From Lead Follow-up to Contract Generation"
+description: "Real estate agents cut admin time by 40%. AI automates lead follow-up, scheduling, and contract generation—close deals faster, earn more."
 date: "2026-02-19"
 excerpt: "The average real estate agent spends 40% of their workweek on administrative tasks — scheduling showings, chasing leads, writing offer letters, and sending follow-up emails that never quite get don..."
 category: "Real Estate"

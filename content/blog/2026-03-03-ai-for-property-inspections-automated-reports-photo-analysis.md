@@ -1,5 +1,6 @@
 ---
 title: "AI for Property Inspections: Automated Reports, Photo Analysis, and Compliance Checks"
+description: "Property surveys take hours plus days of admin. AI auto-generates reports from photos and checks compliance instantly."
 date: "2026-03-03"
 excerpt: "Every property inspection follows the same exhausting pattern: a surveyor or property manager spends two to three hours on-site, takes dozens of photos, scribbles handwritten notes, then heads back..."
 category: "Real Estate"

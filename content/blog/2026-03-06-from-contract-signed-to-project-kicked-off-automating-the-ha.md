@@ -1,5 +1,6 @@
 ---
 title: "From Contract Signed to Project Kicked Off: Automating the Handover Workflow with AI"
+description: "Stop losing deals in the handoff. AI automatically kicks off projects the moment contracts sign—no delays, no forgotten steps, no dropped balls."
 date: "2026-03-06"
 excerpt: "The contract is signed. The client is excited. And somewhere between your sales team closing the deal and your project team opening their laptops, the wheels start to wobble. Someone forgets to sen..."
 category: "Workflow Integration"

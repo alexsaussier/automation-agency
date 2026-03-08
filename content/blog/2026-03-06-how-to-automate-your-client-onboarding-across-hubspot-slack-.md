@@ -1,5 +1,6 @@
 ---
 title: "How to Automate Your Client Onboarding Across HubSpot, Slack, and Google Drive with AI"
+description: "Turn client onboarding from chaos into automation. AI syncs HubSpot, Slack, and Drive so every new client gets flawless handoffs, instantly."
 date: "2026-03-06"
 excerpt: "Every new client you bring on board should feel like a celebration. Instead, for most consultancies and growing SMEs, it feels like a fire drill — someone's chasing down a signed contract, someone ..."
 category: "Workflow Integration"

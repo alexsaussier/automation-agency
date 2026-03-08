@@ -1,5 +1,6 @@
 ---
 title: "AI Customer Service: How to Handle 80% of Tickets Without a Human"
+description: "Handle 80% of support tickets instantly. AI answers FAQs, processes requests, and escalates complex issues—24/7 without staff."
 date: "2026-02-22"
 excerpt: "Every time a customer sends \"What's my order status?\" or \"Can I reschedule my appointment?\", someone on your team stops what they're doing to answer it. Multiply that by 50, 100, or 300 times a wee..."
 category: "Customer Service"

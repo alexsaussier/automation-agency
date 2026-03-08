@@ -1,5 +1,6 @@
 ---
 title: "Logistics Companies Using AI to Optimize Routes and Cut Delivery Costs"
+description: "Cut delivery costs 15-20%. AI optimizes routes in real-time, reduces empty miles, prevents failed deliveries, and tracks performance."
 date: "2026-02-20"
 excerpt: "Every kilometre your drivers cover costs you money. Fuel, driver hours, vehicle wear, and failed deliveries all eat into margins that are already tight. For most logistics operations, route plannin..."
 category: "Logistics"

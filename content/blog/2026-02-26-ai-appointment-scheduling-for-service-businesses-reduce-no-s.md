@@ -1,5 +1,6 @@
 ---
 title: "AI Appointment Scheduling for Service Businesses: Reduce No-Shows by 60%"
+description: "AI scheduling cuts no-shows by 60%, recovering thousands in lost revenue from missed appointments every month."
 date: "2026-02-26"
 excerpt: "Every missed appointment costs you money twice — once in lost revenue, and again in the empty slot you couldn't fill in time. For a physiotherapy clinic charging £80 per session, just five no-shows..."
 category: "Operations"

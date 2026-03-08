@@ -1,5 +1,6 @@
 ---
 title: "The Notification Problem: How AI Cuts Down on Tool Overload by Routing Alerts Intelligently"
+description: "Drown in notifications? AI filters alerts intelligently, routing only what matters to the right person at the right time across all your tools."
 date: "2026-03-06"
 excerpt: "Your phone buzzes. It's a Slack message. Then an email. Then another Slack message — this time from a different channel. A project management notification fires, then a CRM alert, and somewhere bur..."
 category: "Workflow Integration"

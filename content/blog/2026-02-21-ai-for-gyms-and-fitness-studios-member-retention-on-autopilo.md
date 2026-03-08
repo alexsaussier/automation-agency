@@ -1,5 +1,6 @@
 ---
 title: "AI for Gyms and Fitness Studios: Member Retention on Autopilot"
+description: "Prevent member churn. AI tracks engagement, sends personalized re-engagement campaigns, and flags at-risk members before they leave."
 date: "2026-02-21"
 excerpt: "Losing a gym member costs you roughly $300–$500 when you factor in the marketing spend, promotional offers, and staff time it took to acquire them. Yet most fitness studios haemorrhage members quie..."
 category: "Fitness"

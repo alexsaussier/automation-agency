@@ -1,5 +1,6 @@
 ---
 title: "How AI Can Manage Your Email Inbox and Prioritize What Matters"
+description: "Reclaim 2+ hours daily. AI instantly prioritizes urgent emails, surfaces critical messages, and handles routine replies automatically."
 date: "2026-02-23"
 excerpt: "If you're like most professionals, your inbox is the first thing you open in the morning and the last thing you stress about at night. The average office worker receives 121 emails per day and spen..."
 category: "Productivity"

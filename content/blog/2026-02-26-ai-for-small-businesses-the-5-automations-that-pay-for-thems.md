@@ -1,5 +1,6 @@
 ---
 title: "AI for Small Businesses: The 5 Automations That Pay for Themselves in 30 Days"
+description: "Discover five AI automations that save small business owners hours weekly and pay for themselves in just 30 days."
 date: "2026-02-26"
 excerpt: "Running a small business means wearing every hat — and some days it feels like the admin work alone could swallow you whole. Chasing invoices, answering the same five customer questions on repeat, ..."
 category: "Small Business"

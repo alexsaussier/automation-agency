@@ -1,5 +1,6 @@
 ---
 title: "Performance Management Automation: How AI Helps Managers Give Better Feedback"
+description: "Managers give better, faster feedback with AI gathering performance data automatically from all your systems."
 date: "2026-02-26"
 excerpt: "Most managers don't avoid giving feedback because they don't care — they avoid it because it's exhausting. Pulling together performance data from three different systems, remembering a specific inc..."
 category: "Human Resources"

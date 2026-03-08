@@ -1,5 +1,6 @@
 ---
 title: "Microsoft 365 and AI Automation: Making Teams, Outlook, and SharePoint Work Together"
+description: "Unlock hidden automation in Microsoft 365. Connect Teams, Outlook, and SharePoint so your entire workflow runs on autopilot, saving hours every week."
 date: "2026-03-08"
 excerpt: "If you're already paying for Microsoft 365, you're sitting on an automation engine you're probably not using. Most organisations use Teams for chat, Outlook for email, and SharePoint for file stora..."
 category: "Workflow Integration"

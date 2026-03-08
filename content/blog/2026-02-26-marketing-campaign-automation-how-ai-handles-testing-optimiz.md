@@ -1,5 +1,6 @@
 ---
 title: "Marketing Campaign Automation: How AI Handles Testing, Optimization, and Reporting"
+description: "AI tests campaigns, optimizes results, and builds reports automatically—no more spreadsheets or Friday deadline panic."
 date: "2026-02-26"
 excerpt: "Running a marketing campaign used to mean weeks of manual A/B testing, spreadsheets full of performance data, and a Friday afternoon spent building reports nobody read until Monday. If you're manag..."
 category: "Marketing"

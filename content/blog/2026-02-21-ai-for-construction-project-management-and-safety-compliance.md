@@ -1,5 +1,6 @@
 ---
 title: "AI for Construction: Project Management and Safety Compliance Automation"
+description: "Eliminate costly delays. AI monitors safety compliance, tracks subcontractor updates, alerts teams, and manages project paperwork instantly."
 date: "2026-02-21"
 excerpt: "Construction projects bleed money through the gaps — missed safety checks, late subcontractor updates, compliance paperwork that sits in someone's inbox for three days before anyone notices. A mid-..."
 category: "Construction"

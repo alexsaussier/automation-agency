@@ -1,5 +1,6 @@
 ---
 title: "AI for Recruitment: Screen Candidates Faster Without Bias"
+description: "250 résumés per posting? AI screens candidates in seconds, ranks top matches objectively, saves your team weeks of work."
 date: "2026-03-01"
 excerpt: "Hiring the right person is one of the most important things you'll do for your business — and one of the most time-consuming. The average corporate job posting attracts 250 résumés. If you spend ju..."
 category: "Human Resources"

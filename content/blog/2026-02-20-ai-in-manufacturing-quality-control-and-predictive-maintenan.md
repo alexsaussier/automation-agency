@@ -1,5 +1,6 @@
 ---
 title: "AI in Manufacturing: Quality Control and Predictive Maintenance"
+description: "Zero defects, zero downtime. AI detects quality issues in real-time and predicts machine failures before they happen."
 date: "2026-02-20"
 excerpt: "Every manufacturing line has two enemies it can't afford to ignore: defective products slipping through to customers, and machines breaking down at the worst possible moment. Together, quality fail..."
 category: "Manufacturing"

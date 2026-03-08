@@ -1,5 +1,6 @@
 ---
 title: "How Real Estate Agencies Connect Their CRM, Email, and Document Tools with AI Workflows"
+description: "Stop manual lead processing. AI automatically updates your CRM, sends emails, and generates property shortlists the instant a lead arrives."
 date: "2026-03-07"
 excerpt: "Every time a new lead fills out a property enquiry form, someone on your team has to manually add their details to the CRM, fire off an introductory email, pull together a shortlist of matching lis..."
 category: "Real Estate"

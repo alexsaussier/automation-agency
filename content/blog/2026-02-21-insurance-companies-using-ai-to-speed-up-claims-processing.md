@@ -1,5 +1,6 @@
 ---
 title: "Insurance Companies Using AI to Speed Up Claims Processing"
+description: "Cut claims processing time by 70%. AI extracts documents, validates claims, routes approvals, and updates customers automatically."
 date: "2026-02-21"
 excerpt: "Filing an insurance claim used to mean weeks of waiting — paperwork shuffled between departments, adjusters booked solid, and customers left in the dark. Today, that same process is being compresse..."
 category: "Insurance"

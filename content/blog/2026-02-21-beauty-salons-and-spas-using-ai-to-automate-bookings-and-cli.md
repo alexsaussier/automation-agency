@@ -1,5 +1,6 @@
 ---
 title: "Beauty Salons and Spas: Using AI to Automate Bookings and Client Follow-ups"
+description: "Stop phone tag. AI books appointments, sends reminders, captures feedback, and re-engages lapsed clients automatically."
 date: "2026-02-21"
 excerpt: "Running a beauty salon or spa means you're constantly juggling — clients in the chair, staff rotas, product stock, and a phone that never stops ringing. If you're spending your lunch break returnin..."
 category: "Beauty & Wellness"

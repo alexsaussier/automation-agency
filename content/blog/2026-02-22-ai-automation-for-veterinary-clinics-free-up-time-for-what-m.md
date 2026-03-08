@@ -1,5 +1,6 @@
 ---
 title: "AI Automation for Veterinary Clinics: Free Up Time for What Matters"
+description: "Reclaim clinic time. AI answers calls, reminds clients, schedules appointments, chases invoices, and manages rotas automatically."
 date: "2026-02-22"
 excerpt: "Running a veterinary clinic means juggling a lot more than medicine. Between ringing phones, appointment reminders, follow-up calls, invoice chasing, and staff scheduling, it's easy to feel like ha..."
 category: "Veterinary"

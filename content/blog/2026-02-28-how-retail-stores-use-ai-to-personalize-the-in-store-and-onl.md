@@ -1,5 +1,6 @@
 ---
 title: "How Retail Stores Use AI to Personalize the In-Store and Online Experience"
+description: "Your regulars love you but you miss personalization at scale. AI tailors in-store and online experiences for every customer."
 date: "2026-02-28"
 excerpt: "You already know your regulars. The couple who come in every Saturday, the customer who always asks if you've restocked that particular brand of hot sauce, the online shopper who abandons their car..."
 category: "Retail"

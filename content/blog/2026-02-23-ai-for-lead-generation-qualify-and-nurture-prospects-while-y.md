@@ -1,5 +1,6 @@
 ---
 title: "AI for Lead Generation: Qualify and Nurture Prospects While You Sleep"
+description: "Convert more leads while sleeping. AI qualifies prospects, nurtures conversations, and flags sales-ready leads automatically."
 date: "2026-02-23"
 excerpt: "Every sales team has the same problem: too many leads coming in, not enough time to follow up with all of them properly. The result? Hot prospects go cold waiting for a response, and your team burn..."
 category: "Sales"

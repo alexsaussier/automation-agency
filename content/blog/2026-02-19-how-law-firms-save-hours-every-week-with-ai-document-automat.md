@@ -1,5 +1,6 @@
 ---
 title: "How Law Firms Save Hours Every Week with AI Document Automation"
+description: "Law firms save 10+ hours weekly automating documents. See how AI handles intake forms, NDAs, and contracts instantly—reclaim billable time."
 date: "2026-02-19"
 excerpt: "A senior partner at a 12-attorney firm in Chicago recently told us she was spending nearly 90 minutes every day reviewing, editing, and formatting client intake documents, NDAs, and engagement lett..."
 category: "Legal"

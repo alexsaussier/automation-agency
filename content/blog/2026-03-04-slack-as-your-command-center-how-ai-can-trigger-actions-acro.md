@@ -1,5 +1,6 @@
 ---
 title: "Slack as Your Command Center: How AI Can Trigger Actions Across Every Tool Your Team Uses"
+description: "Make Slack your command center. AI watches decisions and triggers instant actions across all your apps without manual work."
 date: "2026-03-04"
 excerpt: "Your team already lives in Slack. Decisions get made there, updates get shared there, and half your institutional knowledge is buried somewhere in a channel you bookmarked three months ago. But her..."
 category: "Workflow Integration"

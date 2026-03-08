@@ -1,5 +1,6 @@
 ---
 title: "AI Contract Review: How Small Businesses Can Access Enterprise-Grade Legal Checks"
+description: "Get enterprise-level contract reviews instantly. AI flags risky terms so small businesses avoid costly legal mistakes."
 date: "2026-02-24"
 excerpt: "Every small business owner has been there: a supplier sends over a five-page contract, you skim it for anything obviously alarming, and then you sign it because you can't justify spending £400 on a..."
 category: "Legal"

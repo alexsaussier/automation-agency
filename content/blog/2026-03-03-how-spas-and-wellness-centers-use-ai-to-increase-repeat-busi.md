@@ -1,5 +1,6 @@
 ---
 title: "How Spas and Wellness Centers Use AI to Increase Repeat Business"
+description: "Spas lose 60-70% of first-time clients. AI automates reminders and personalized offers to turn them into loyal regulars."
 date: "2026-03-03"
 excerpt: "Running a spa or wellness center means you're in the business of making people feel good — but getting clients to come back consistently is harder than it looks. Most spas lose between 60–70% of fi..."
 category: "Beauty & Wellness"

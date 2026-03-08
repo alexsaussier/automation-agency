@@ -1,5 +1,6 @@
 ---
 title: "AI for Marketing Agencies: Automate Campaigns and Reporting"
+description: "Stop data wrangling. AI pulls campaign metrics, generates client reports, and automates dashboards—save 20+ hours monthly."
 date: "2026-02-20"
 excerpt: "Running a marketing agency means you're constantly caught between doing great work and documenting it. Your team spends hours pulling data from Google Ads, Meta, HubSpot, and three other platforms ..."
 category: "Marketing"

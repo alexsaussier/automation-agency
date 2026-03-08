@@ -1,5 +1,6 @@
 ---
 title: "AI for Property Management: Automate Maintenance Requests, Leases, and Rent Collection"
+description: "Automate maintenance requests, lease renewals, and rent collection across all your properties in minutes, not hours."
 date: "2026-02-27"
 excerpt: "If you're managing more than five rental properties, you already know the feeling: a maintenance request comes in at 11pm, a lease renewal slips through the cracks, and a tenant who was supposed to..."
 category: "Real Estate"

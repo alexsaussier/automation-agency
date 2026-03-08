@@ -1,5 +1,6 @@
 ---
 title: "E-commerce Personalization: How AI Increases Average Order Value"
+description: "Boost average order value 25-35%. AI personalizes product recommendations, suggests upsells, and captures abandoned carts automatically."
 date: "2026-02-20"
 excerpt: "You already know that getting someone to your product page is the hard part — or so you thought. The uncomfortable truth is that most e-commerce stores leave significant money on the table after th..."
 category: "E-commerce"

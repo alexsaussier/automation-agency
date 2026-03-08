@@ -1,5 +1,6 @@
 ---
 title: "The Ops Team of the Future: Using AI Agents to Orchestrate Work Across Your Entire Tool Stack"
+description: "Build an ops team that scales without hiring. AI agents orchestrate work across your entire stack, eliminating hand-offs and keeping teams aligned."
 date: "2026-03-07"
 excerpt: "Every growing business eventually hits the same wall. You've got a CRM that doesn't talk to your project management tool. Your helpdesk tickets don't automatically update your billing system. Someo..."
 category: "Workflow Integration"

@@ -1,5 +1,6 @@
 ---
 title: "AI in Medical Clinics: Automating Appointments, Records, and Billing"
+description: "Clinics reclaim 2 hours per physician daily. AI automates appointments, medical records, and billing—so doctors focus on patient care, not paperwork."
 date: "2026-02-19"
 excerpt: "Medical clinics are drowning in administrative work. The average physician spends nearly 2 hours on paperwork for every hour of direct patient care — time that could be spent diagnosing, treating, ..."
 category: "Healthcare"

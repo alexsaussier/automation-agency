@@ -1,5 +1,6 @@
 ---
 title: "Connecting Your CRM, Email, and Calendar with AI: The End of Copying and Pasting"
+description: "Skip the copy-paste between CRM, email, and calendar. AI logs calls, sends follow-ups, and books next meetings instantly."
 date: "2026-03-04"
 excerpt: "If you've ever finished a sales call, then spent the next ten minutes switching between your CRM, your inbox, and your calendar to log the conversation, send a follow-up email, and book the next me..."
 category: "Workflow Integration"

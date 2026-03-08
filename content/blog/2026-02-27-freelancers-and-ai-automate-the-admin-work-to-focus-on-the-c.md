@@ -1,5 +1,6 @@
 ---
 title: "Freelancers and AI: Automate the Admin Work to Focus on the Creative Work"
+description: "Stop chasing invoices and rewriting briefs. Automate admin so you spend more time on billable creative work."
 date: "2026-02-27"
 excerpt: "If you're a freelancer, you already know the drill. You spend Monday chasing an invoice, Tuesday rewriting the same project brief you've sent a dozen times, Wednesday following up on a proposal tha..."
 category: "Freelancing"

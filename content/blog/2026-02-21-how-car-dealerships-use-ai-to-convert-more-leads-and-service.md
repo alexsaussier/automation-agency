@@ -1,5 +1,6 @@
 ---
 title: "How Car Dealerships Use AI to Convert More Leads and Service Customers"
+description: "Never lose a lead again. AI instantly responds to inquiries, schedules demos, follows up, and nurtures prospects into sales conversations."
 date: "2026-02-21"
 excerpt: "Every day, your dealership generates dozens of leads — people who clicked on a vehicle listing, submitted a finance enquiry, or booked a test drive. And every day, a handful of those leads go cold ..."
 category: "Automotive"

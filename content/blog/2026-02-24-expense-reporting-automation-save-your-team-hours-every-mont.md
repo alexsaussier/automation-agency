@@ -1,5 +1,6 @@
 ---
 title: "Expense Reporting Automation: Save Your Team Hours Every Month with AI"
+description: "Eliminate receipt hunts and manual expense entry. AI extracts, codes, and routes expenses for instant approval."
 date: "2026-02-24"
 excerpt: "Every month, your team loses hours to the same tedious cycle: digging through inboxes for receipts, manually entering figures into spreadsheets, chasing managers for approvals, and reconciling ever..."
 category: "Finance"

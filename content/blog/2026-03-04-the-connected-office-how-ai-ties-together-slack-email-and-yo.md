@@ -1,5 +1,6 @@
 ---
 title: "The Connected Office: How AI Ties Together Slack, Email, and Your Project Management Tools"
+description: "Stop losing client requests between Slack, email, and your tools. AI connects everything automatically—no more dropped balls."
 date: "2026-03-04"
 excerpt: "Every growing team knows the feeling: a client emails a request, someone mentions it in Slack, a task gets half-created in your project management tool, and three days later it falls through the cr..."
 category: "Workflow Integration"

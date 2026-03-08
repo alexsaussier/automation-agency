@@ -1,5 +1,6 @@
 ---
 title: "AI Automation for Restaurants: Cut Costs and Delight Customers"
+description: "Restaurants boost profits instantly. AI cuts no-shows, optimizes staffing, and automates reservations—lower costs, happier customers, better margins."
 date: "2026-02-19"
 excerpt: "Running a restaurant has always been brutally competitive, but the last few years have pushed margins to their limits. Labor costs are up, no-show reservations are hemorrhaging revenue, and custome..."
 category: "Restaurants & Food Service"

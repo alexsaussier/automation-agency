@@ -1,5 +1,6 @@
 ---
 title: "AI-Powered HR Onboarding: Give New Hires a Great First Day Automatically"
+description: "New hires onboarded in hours, not weeks. AI automates paperwork, IT setup, policy delivery, and team introductions before day one."
 date: "2026-02-23"
 excerpt: "The first day at a new job sets the tone for everything that follows. Yet for most organisations, onboarding still means a frantic morning of chasing IT for laptop access, printing policy documents..."
 category: "Human Resources"
