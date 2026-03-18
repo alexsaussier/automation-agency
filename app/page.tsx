@@ -1,7 +1,71 @@
 import OnboardingForm from '@/components/OnboardingForm';
 import Navbar from '@/components/Navbar';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
+
+const poweredByBrands = [
+  {
+    name: 'Claude',
+    src: '/logos/claude.png',
+    width: 170,
+    height: 48,
+  },
+  {
+    name: 'OpenAI',
+    src: '/logos/openai.png',
+    width: 170,
+    height: 48,
+  },
+  {
+    name: 'Openclaw',
+    src: '/logos/openclaw.svg',
+    width: 72,
+    height: 72,
+  },
+  {
+    name: 'n8n',
+    src: '/logos/n8n.png',
+    width: 170,
+    height: 48,
+  },
+  {
+    name: 'Gumloop',
+    src: '/logos/gumloop.png',
+    width: 196,
+    height: 58,
+  },
+  {
+    name: 'Airtable',
+    src: '/logos/Airtable.png',
+    width: 186,
+    height: 54,
+  },
+];
+
+function PoweredByLogo({
+  name,
+  src,
+  width,
+  height,
+}: {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+}) {
+  return (
+    <div className="powered-by-card flex min-w-[200px] items-center justify-center rounded-2xl border border-transparent bg-transparent px-6 py-5 shadow-none backdrop-blur-0">
+      <div className="flex h-14 w-[160px] items-center justify-center">
+        <img
+          src={src}
+          alt={name}
+          width={width}
+          height={height}
+          className="max-h-12 w-auto max-w-[160px] object-contain"
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -36,10 +100,10 @@ export default function Home() {
             {/* Left side - Text content */}
             <div>
               <h2 className="text-5xl lg:text-7xl font-bold mb-6 font-[family-name:var(--font-inter)] leading-tight">
-                <span className="italic text-accent">AI Agents</span> That Work For You
+                <span className="italic text-accent">AI Agents</span> For Your Business
               </h2>
               <p className="text-lg lg:text-xl text-foreground/70 mb-8 font-[family-name:var(--font-roboto)] leading-relaxed">
-               We build AI agents for your business that work while you sleep, and we maintain them so you don&apos;t have to worry about anything.
+               We build AI agents for your business that work while you sleep, and we maintain them so you have total peace of mind.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#get-started" className="bg-accent hover:bg-accent-dark text-white px-8 py-3.5 rounded-lg font-medium transition-colors text-center">
@@ -108,31 +172,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted By Section - Hidden */}
-      {/* 
-      <section className="py-16 px-6 lg:px-8 border-y border-border bg-foreground/[0.02]">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-center text-sm font-medium text-foreground/60 uppercase tracking-wider mb-12">
-            They use our AI agents
-          </h2>
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-            <div className="flex items-center justify-center w-32 h-16 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all">
-              <Image 
-                src="/LOGO-DL-DELFORGE-300.png" 
-                alt="Delforge" 
-                width={128} 
-                height={64}
-                className="object-contain"
-              />
+      <section className="border-y border-border bg-[linear-gradient(180deg,rgba(77,101,255,0.05),rgba(255,255,255,0.9))] py-16 px-6 lg:px-8">
+        <div className="container mx-auto max-w-7xl">
+          <div className="mb-10 flex flex-col items-center text-center">
+            <span className="mb-4 inline-flex items-center rounded-full border border-accent/20 bg-accent/8 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+              Powered by
+            </span>
+            <h2 className="max-w-3xl text-3xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.03em] text-foreground lg:text-4xl">
+              Solutions built on modern AI tools
+            </h2>
+          </div>
+
+          <div className="powered-by-marquee">
+            <div className="powered-by-track" aria-label="Powered by brand logos">
+              {[...poweredByBrands, ...poweredByBrands].map((brand, index) => (
+                <PoweredByLogo
+                  key={`${brand.name}-${index}`}
+                  name={brand.name}
+                  src={brand.src}
+                  width={brand.width}
+                  height={brand.height}
+                />
+              ))}
             </div>
-            <div className="flex items-center justify-center w-32 h-16 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all">
-              <div className="text-2xl font-bold text-foreground/40">TechCo</div>
-            </div>
-            
           </div>
         </div>
       </section>
-      */}
 
       
 
