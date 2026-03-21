@@ -29,25 +29,53 @@ export default function About() {
             <div className="grid lg:grid-cols-[300px_1fr] gap-12 items-start">
               {/* Photo */}
               <div className="order-1 lg:order-1">
-                <div className="flex justify-center">
-                  <div className="relative w-64 h-64 rounded-full overflow-hidden bg-light-gray border-4 border-accent/20 shadow-xl">
+                <div className="flex flex-col items-center">
+                  <div className="flex justify-center">
+                    <div className="relative w-64 h-64 rounded-full overflow-hidden bg-light-gray border-4 border-accent/20 shadow-xl">
+                      <Image
+                        src="/alex.jpg"
+                        alt="Alexandre Saussier"
+                        fill
+                        className="object-cover object-top"
+                        priority
+                      />
+                    </div>
+                  </div>
+
+                  <div className="mt-6 flex w-full max-w-[220px] flex-col items-center rounded-2xl border border-border bg-background p-4 shadow-sm">
+                    <span className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/45">
+                      Previous experience:
+                    </span>
                     <Image
-                      src="/alex.jpg"
-                      alt="Alexandre Saussier"
-                      fill
-                      className="object-cover object-top"
-                      priority
+                      src="/logos/deloitte.svg"
+                      alt="Deloitte"
+                      width={132}
+                      height={28}
+                      className="h-auto w-auto object-contain"
                     />
                   </div>
+
                 </div>
               </div>
 
               {/* Bio */}
               <div className="order-2 lg:order-2 space-y-6">
                 <div>
-                  <h2 className="text-4xl font-bold mb-2 font-[family-name:var(--font-inter)]">
-                    Alexandre Saussier
-                  </h2>
+                  <div className="flex items-center gap-3 mb-2">
+                    <h2 className="text-4xl font-bold font-[family-name:var(--font-inter)]">
+                      Alexandre Saussier
+                    </h2>
+                    <a
+                      href="https://www.linkedin.com/in/alexandre-saussier-171b0b152/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-background p-2 text-foreground/70 transition-colors hover:border-accent/40 hover:text-accent"
+                    >
+                      <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19ZM8.34 10.09H5.67V18H8.34V10.09ZM7 5.88A1.56 1.56 0 005.44 7.44C5.44 8.3 6.12 9 6.98 9H7A1.56 1.56 0 007 5.88ZM18.33 13.17C18.33 10.59 16.95 9.39 15.11 9.39C13.62 9.39 12.95 10.21 12.58 10.79V10.09H9.91C9.95 10.55 9.91 18 9.91 18H12.58V13.58C12.58 13.34 12.6 13.1 12.67 12.93C12.86 12.45 13.28 11.95 14 11.95C14.94 11.95 15.31 12.66 15.31 13.71V18H17.98V13.4C17.98 13.24 17.98 13.17 18.33 13.17Z" />
+                      </svg>
+                    </a>
+                  </div>
                   <p className="text-xl text-accent font-medium">
                     Founder & CEO
                   </p>
@@ -55,12 +83,12 @@ export default function About() {
 
                 <div className="space-y-4 text-foreground/80 font-[family-name:var(--font-roboto)]">
                   <p>
-                    Alexandre Saussier is the founder of {process.env.NEXT_PUBLIC_COMPANY_NAME}, an intelligent automation agency
+                    Alexandre Saussier is the founder of {process.env.NEXT_PUBLIC_COMPANY_NAME}, an AI-powered automation agency
                     that helps businesses of all types automate their operations with AI agents.
                   </p>
 
                   <p>
-                    As a former Consultant at Deloitte&apos;s Omnia AI practice, Alexandre specialized in AI 
+                    As a former Consultant at Deloitte&apos;s AI practice in Canada, Alexandre specialized in AI 
                     Automation consulting, building large-scale solutions for some of the biggest companies and institutions in Canada.
                     He holds professional certifications in the Intelligent Automation field (Blue Prism Certified Developer, UiPath Certified RPA Associate)
                     and strong automation project experience with institutions in the banking and insurance industries.
@@ -173,7 +201,7 @@ export default function About() {
               Book a free discovery call with us
             </h2>
             <p className="text-lg text-foreground/70 mb-8 font-[family-name:var(--font-roboto)]">
-              Let&apos;s discuss how AI and automation can help you achieve your goals.
+              Let&apos;s discuss where you need to start adding AI to your business.
             </p>
             <Link
               href="/#get-started"

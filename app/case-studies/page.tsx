@@ -25,7 +25,7 @@ const caseStudies = [
     ],
   },
   {
-    title: 'Internet search tool for marketing asset usage for a large sport retailer',
+    title: 'Performance tracking for marketing assets for a large sport retailer',
     summary:
       'A global monitoring workflow that searches the internet for campaign asset usage and feeds the findings into a dashboard for the marketing team.',
     timeSaved: '15+ hours saved weekly',

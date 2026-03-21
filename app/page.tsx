@@ -275,16 +275,16 @@ export default function Home() {
             {commonUseCases.map((useCase) => (
               <div
                 key={useCase.title}
-                className="group relative overflow-hidden rounded-[24px] border border-accent/12 bg-[linear-gradient(180deg,rgba(77,101,255,0.09),rgba(255,255,255,0.98)_28%,rgba(245,245,247,0.95)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
+                className="group relative overflow-hidden rounded-[24px] border border-accent/12 bg-[linear-gradient(150deg,rgba(77,101,255,0.22)_0%,rgba(180,190,255,0.35)_50%,rgba(220,225,255,0.45)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
               >
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_top,rgba(77,101,255,0.18),transparent_72%)] opacity-80"></div>
                 <div className="relative mb-4 flex h-13 w-13 items-center justify-center rounded-2xl border border-white/70 bg-white/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] backdrop-blur">
                   {useCase.icon}
                 </div>
-                <h4 className="relative mb-3 text-xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em] bg-transparent">
+                <h4 className="relative mb-3 text-xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em]">
                   {useCase.title}
                 </h4>
-                <p className="relative leading-relaxed text-foreground/72">
+                <p className="relative leading-relaxed text-foreground/72 bg-transparent">
                   {useCase.description}
                 </p>
               </div>
