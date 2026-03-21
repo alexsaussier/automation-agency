@@ -41,6 +41,64 @@ const poweredByBrands = [
   },
 ];
 
+const commonUseCases = [
+  {
+    title: 'Document Automation',
+    description: 'Extract information from documents and emails automatically. Generate reports, automate invoice processing, contract generation and more. ',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v11.494m-7-8.494h14M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'HR and Customer Support',
+    description: 'Automate HR onboarding, automate customer support responses, create AI chatbots and triage requests.',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5l-2 2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-3 3v-3z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Outreach and Lead Qualification',
+    description: 'Automate outreach, score leads, enrich them with company data, and route the best opportunities to your team instantly.',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8L10 18l-5-5-3 3" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Content Creation',
+    description: 'Turn news, internal knowledge, or campaign updates into blog posts, emails, and social content automatically.',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h8m-8 4h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H9l-4 0V4z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Reporting & Dashboards',
+    description: 'Collect data from multiple tools and deliver weekly summaries, alerts, and dashboards without spreadsheet work.',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 20V10m5 10V4m5 16v-7M4 20h16" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Research & Monitoring',
+    description: 'Track competitors, regulations, online mentions, or campaign usage so your team stays informed automatically.',
+    icon: (
+      <svg className="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
+      </svg>
+    ),
+  },
+  
+];
+
 function PoweredByLogo({
   name,
   src,
@@ -199,7 +257,41 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section className="px-6 py-16 lg:px-8 lg:py-20">
+        <div className="container mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <span className="mb-4 inline-flex items-center rounded-full border border-accent/20 bg-accent/8 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+              Common SME Use Cases
+            </span>
+            <h3 className="mb-4 text-3xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.03em] lg:text-4xl">
+              The repetitive work AI handles best
+            </h3>
+            <p className="mx-auto max-w-3xl text-lg text-foreground/70">
+              Most small and mid-sized businesses lose time to the same patterns: answering recurring questions, producing content, chasing reports, and monitoring information manually.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {commonUseCases.map((useCase) => (
+              <div
+                key={useCase.title}
+                className="group relative overflow-hidden rounded-[24px] border border-accent/12 bg-[linear-gradient(180deg,rgba(77,101,255,0.09),rgba(255,255,255,0.98)_28%,rgba(245,245,247,0.95)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
+              >
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_top,rgba(77,101,255,0.18),transparent_72%)] opacity-80"></div>
+                <div className="relative mb-4 flex h-13 w-13 items-center justify-center rounded-2xl border border-white/70 bg-white/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] backdrop-blur">
+                  {useCase.icon}
+                </div>
+                <h4 className="relative mb-3 text-xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em] bg-transparent">
+                  {useCase.title}
+                </h4>
+                <p className="relative leading-relaxed text-foreground/72">
+                  {useCase.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       
       {/* Features Section */}

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface NavbarProps {
-  activePage?: 'home' | 'about' | 'blog';
+  activePage?: 'home' | 'about' | 'blog' | 'case-studies';
 }
 
 export default function Navbar({ activePage = 'home' }: NavbarProps) {
@@ -44,14 +44,14 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
             </Link>
 
             <Link
-              href="/blog"
+              href="/case-studies"
               className={`text-sm transition-colors ${
-                activePage === 'blog'
+                activePage === 'case-studies'
                   ? 'text-accent font-semibold'
                   : 'hover:text-accent'
               }`}
             >
-              Blog
+              Case Studies
             </Link>
           </div>
           <a href="/#get-started" className="bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">

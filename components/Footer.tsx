@@ -7,14 +7,14 @@ export default function Footer() {
             &copy; 2026 {process.env.NEXT_PUBLIC_COMPANY_NAME}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="/blog" className="text-sm text-foreground/60 hover:text-accent transition-colors">
-              Blog
-            </a>
             <a href="/privacy" className="text-sm text-foreground/60 hover:text-accent transition-colors">
               Privacy Policy
             </a>
             <a href="/terms" className="text-sm text-foreground/60 hover:text-accent transition-colors">
               Terms of Service
+            </a>
+            <a href="/blog" className="text-xs text-foreground/45 hover:text-foreground/70 transition-colors">
+              Blog
             </a>
           </div>
         </div>

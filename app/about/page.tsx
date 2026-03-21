@@ -133,16 +133,10 @@ export default function About() {
               {/* Text Content */}
               <div className="space-y-6">
                 <p className="text-lg text-foreground/80 font-[family-name:var(--font-roboto)] leading-relaxed">
-                  We believe in the power of flexible, asynchronous collaboration. Our team works remotely across 
-                  time zones, allowing us to deliver efficient, cost-effective solutions without the overhead of 
-                  traditional consulting firms.
+                  We serve clients principally in Monaco and France. Most of our work is done remotely, but we do occasionally require on-person
+                  collaboration to better understand your business and deliver the best possible solution.
                 </p>
-                <p className="text-lg text-foreground/80 font-[family-name:var(--font-roboto)] leading-relaxed">
-                  But we also know that true understanding comes from being there in person. That&apos;s why we travel 
-                  on-site to visit our clients, observe workflows firsthand, and interview your team members. 
-                  This hands-on approach ensures we truly understand your business challenges and deliver AI solutions 
-                  that seamlessly integrate into your day-to-day operations.
-                </p>
+                
                 <div className="pt-4">
                   <h3 className="text-xl font-semibold mb-2 font-[family-name:var(--font-inter)]">Our Office</h3>
                   <p className="text-foreground/70"> 
