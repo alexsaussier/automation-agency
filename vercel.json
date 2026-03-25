@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/fb-ads/cron-rotate",
+      "schedule": "0 9 * * 1"
+    }
+  ]
+}
