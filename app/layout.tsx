@@ -19,20 +19,20 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.brightbots.io"
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: `${process.env.NEXT_PUBLIC_COMPANY_NAME} - AI Automation Agency Monaco`,
-    template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME}`,
+    default: "BrightBots — AI Automation Agency for SMEs",
+    template: "%s | BrightBots",
   },
   description:
-    "BrightBots is an AI automation agency helping businesses eliminate repetitive work with custom AI agents and workflow automation.",
+    "BrightBots builds custom AI agents and workflow automations for small businesses. Cut repetitive work, reduce costs, and scale faster — live in weeks, not months.",
   keywords: [
-    "AI automation Agency",
-    "automatisation IA Monaco",
-    "AI agency Monaco",
-    "workflow automation Monaco",
-    "AI agents Monaco",
+    "AI automation agency",
+    "AI agents for small business",
+    "workflow automation",
     "business automation Monaco",
-    "automatisation entreprise Monaco",
+    "AI automation SME",
     "BrightBots",
+    "how long does AI deployment take",
+    "autonomous AI platforms",
   ],
   authors: [{ name: "Alexandre Saussier", url: BASE_URL }],
   creator: "BrightBots",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "BrightBots",
-    title: "BrightBots - AI Automation Agency",
-    description: "Custom AI agents and workflow automation for businesses.",
+    title: "BrightBots — AI Automation Agency for SMEs",
+    description: "BrightBots builds custom AI agents and workflow automations for small businesses. Live in weeks, not months.",
     images: [
       {
         url: "/og-image.png",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BrightBots - AI Automation Agency",
+    title: "BrightBots — AI Automation Agency for SMEs",
     description:
-      "Custom AI agents and workflow automation for businesses.",
+      "BrightBots builds custom AI agents and workflow automations for small businesses. Live in weeks, not months.",
     images: ["/og-image.png"],
   },
   alternates: {

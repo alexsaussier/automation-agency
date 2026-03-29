@@ -1,7 +1,7 @@
 ---
-title: "How Long Does It Take to Implement AI Automation in a Small Business?"
+title: "How Long Does AI Automation Take? Real Timelines for Small Businesses"
 date: "2026-03-16"
-excerpt: "If you've been putting off AI automation because it sounds like a months-long IT project, you're not alone — and you're probably wrong about the timeline. Most small business owners picture enterpr..."
+excerpt: "Most small businesses go live with AI automation in 1–4 weeks — not months. Here's an honest breakdown of what affects the timeline and what to expect at each stage."
 category: "Getting Started"
 slug: "how-long-does-it-take-to-implement-ai-automation-in-a-small-business-2026-03-16"
 readTime: "6 min read"
