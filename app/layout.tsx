@@ -120,6 +120,17 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="ed2acdee-412d-4f84-bead-1cf49d6ba786"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBY1E5XNZ5" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TBY1E5XNZ5');
+            `,
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${roboto.variable} antialiased`}>
         {children}
