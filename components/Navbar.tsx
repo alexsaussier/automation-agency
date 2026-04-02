@@ -12,9 +12,9 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-1">
             <Image 
-              src="/logo_dark.jpeg" 
+              src="/logo.png"
               alt="BrightBots Logo"
-              width={50} 
+              width={50}
               height={50}
               className="object-contain"
             />
