@@ -41,14 +41,14 @@ const flows = [
         iconBg: 'bg-blue-500/20 text-blue-600',
       },
       {
-        icon: <LogoIcon src="/logos/openai.png" alt="OpenAI" />,
+        icon: <LogoIcon src="/logos/openai_notext.png" alt="OpenAI" />,
         label: 'AI Summarises',
         sublabel: 'Key points extracted by AI',
         color: 'from-accent/20 to-accent/10 border-accent/40',
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/gmail.svg" alt="Gmail" />,
+        icon: <LogoIcon src="/logos/gmail.png" alt="Gmail" />,
         label: 'Newsletter Sent',
         sublabel: 'Team receives every Monday',
         color: 'from-red-500/15 to-red-400/10 border-red-400/30',
@@ -62,21 +62,21 @@ const flows = [
     emoji: '💼',
     steps: [
       {
-        icon: <LogoIcon src="/logos/telegram.svg" alt="Telegram" />,
+        icon: <LogoIcon src="/logos/telegram.png" alt="Telegram" />,
         label: 'Telegram Bot',
         sublabel: 'Sales rep sends prospect info',
         color: 'from-sky-500/20 to-sky-400/10 border-sky-400/40',
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/openai.png" alt="OpenAI" />,
+        icon: <LogoIcon src="/logos/openai_notext.png" alt="OpenAI" />,
         label: 'AI Enriches Lead',
         sublabel: 'Company info auto-fetched',
         color: 'from-accent/20 to-accent/10 border-accent/40',
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/slack.svg" alt="Slack" />,
+        icon: <LogoIcon src="/logos/slack.png" alt="Slack" />,
         label: 'CRM + Slack Alert',
         sublabel: 'Lead registered, team notified',
         color: 'from-purple-500/20 to-purple-400/10 border-purple-400/30',
@@ -90,14 +90,14 @@ const flows = [
     emoji: '🎧',
     steps: [
       {
-        icon: <LogoIcon src="/logos/gmail.svg" alt="Gmail" />,
+        icon: <LogoIcon src="/logos/gmail.png" alt="Gmail" />,
         label: 'Customer Email',
         sublabel: 'Incoming support request',
         color: 'from-red-500/15 to-red-400/10 border-red-400/30',
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/openai.png" alt="OpenAI" />,
+        icon: <LogoIcon src="/logos/openai_notext.png" alt="OpenAI" />,
         label: 'AI Classifies & Drafts',
         sublabel: 'Intent detected, reply written',
         color: 'from-accent/20 to-accent/10 border-accent/40',
