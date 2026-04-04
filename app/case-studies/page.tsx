@@ -1,76 +1,64 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const caseStudies = [
   {
-    title: 'Automated blog article generator for a local law firm',
-    summary:
-      'A weekly content engine that monitors local legal news, drafts blog articles and LinkedIn posts, and emails finished content to the client with no manual work required.',
-    timeSaved: '5 hours saved weekly',
-    cadence: 'Runs automatically once a week',
-    stack: ['n8n', 'OpenAI'],
-    challenge: [
-      'The firm wanted to publish timely legal commentary but did not want lawyers or staff spending time reviewing local legal news every week.',
-      'Their team needed a way to consistently pick the most relevant legal developments, turn them into client-facing content, and prepare social distribution without adding more work.',
+    industry: '⚖️ Law Firm',
+    cadence: 'Weekly',
+    title: 'Automated blog & LinkedIn content engine',
+    summary: 'Monitors legal news, drafts articles and posts, emails finished content — zero manual work.',
+    timeSaved: '5h',
+    timeSavedLabel: 'per week',
+    flow: [
+      { logo: '/logos/n8n.png',    label: 'Scrape news' },
+      { logo: '/logos/openai.png', label: 'AI drafts' },
+      { logo: '/logos/gmail.svg',  label: 'Email sent' },
     ],
-    solution: [
-      'We built an automation that scrapes local legal news sources and filters the stories most relevant to the law firm.',
-      'The workflow then generates a full blog article, creates a matching LinkedIn post, and sends the finished content by email to the client for review.',
-      'The full process runs automatically every week, so the client does not need to monitor sources, shortlist stories, or write first drafts.',
-    ],
-    outcome: [
-      'The firm saves around 5 hours every week on news selection and content writing.',
-      'They get a reliable publishing rhythm without assigning billable staff to repetitive editorial work.',
+    stack: [
+      { logo: '/logos/n8n.png',    name: 'n8n' },
+      { logo: '/logos/openai.png', name: 'OpenAI' },
     ],
   },
   {
-    title: 'Performance tracking for marketing assets for a large sport retailer',
-    summary:
-      'A global monitoring workflow that searches the internet for campaign asset usage and feeds the findings into a dashboard for the marketing team.',
-    timeSaved: '15+ hours saved weekly',
-    cadence: 'Continuous internet monitoring and dashboard reporting',
-    stack: ['n8n', 'SerpAPI', 'OpenAI'],
-    challenge: [
-      'The retailer invests heavily in worldwide marketing assets such as photo shoots, banners, and campaign visuals.',
-      'Their central team had limited visibility into whether local entities and retail partners were actually using those assets online.',
-      'Checking usage manually required assigning junior analyst time to repetitive global internet research.',
+    industry: '🏪 Sport Retailer',
+    cadence: 'Continuous',
+    title: 'Marketing asset performance tracker',
+    summary: 'Searches the internet for campaign asset usage and feeds findings into a dashboard.',
+    timeSaved: '15h+',
+    timeSavedLabel: 'per week',
+    flow: [
+      { logo: '/logos/n8n.png',    label: 'Web search' },
+      { logo: '/logos/openai.png', label: 'AI analysis' },
+      { logo: '/logos/Airtable.png', label: 'Dashboard' },
     ],
-    solution: [
-      'We built a workflow that searches the internet worldwide for the retailer’s marketing assets and campaign traces.',
-      'The automation compiles the findings into a dashboard so the team can monitor who uses which assets, where they are being used, and how often they appear.',
-      'This gives the marketing team a structured view of asset adoption across markets without manual research cycles.',
-    ],
-    outcome: [
-      'The team now knows which assets perform, who uses them most, and where to focus future campaign efforts.',
-      'The workflow saves more than 15 hours per week by removing the need for manual monitoring and reporting.',
+    stack: [
+      { logo: '/logos/n8n.png',    name: 'n8n' },
+      { logo: '/logos/openai.png', name: 'OpenAI' },
     ],
   },
   {
-    title: 'Internal legal newsletter for a local law firm',
-    summary:
-      'A weekly internal newsletter that keeps lawyers up to date on local regulation changes and legal developments without requiring them to manually monitor multiple sources.',
-    timeSaved: '10+ hours saved weekly',
-    cadence: 'Sent weekly to all lawyers',
-    stack: ['n8n', 'OpenAI'],
-    challenge: [
-      'Lawyers were spending hours every week checking local websites such as Journal de Monaco and Legimonaco to stay current on regulatory developments.',
-      'The work was important but repetitive, and it pulled legal staff away from higher-value client work.',
+    industry: '⚖️ Law Firm',
+    cadence: 'Weekly',
+    title: 'Internal legal newsletter',
+    summary: 'Scrapes regulation sources, compiles a digest, and distributes it to all lawyers automatically.',
+    timeSaved: '10h+',
+    timeSavedLabel: 'per week',
+    flow: [
+      { logo: '/logos/n8n.png',    label: 'Scrape sources' },
+      { logo: '/logos/openai.png', label: 'AI digest' },
+      { logo: '/logos/gmail.svg',  label: 'Newsletter' },
     ],
-    solution: [
-      'We built an automation that scrapes major local legal news websites on a recurring basis.',
-      'It selects the most important developments, compiles them into an easy-to-read and nicely formatted newsletter, and distributes it weekly to all lawyers.',
-      'This ensures the team stays informed without having to manually monitor multiple sources.',
-    ],
-    outcome: [
-      'The firm saves more than 10 hours every week across its legal team.',
-      'Lawyers stay up to date through a single consistent briefing instead of fragmented manual research.',
+    stack: [
+      { logo: '/logos/n8n.png',    name: 'n8n' },
+      { logo: '/logos/openai.png', name: 'OpenAI' },
     ],
   },
 ];
 
 export const metadata = {
-  title: `Case Studies | ${process.env.NEXT_PUBLIC_COMPANY_NAME}`,
+  title: 'Case Studies | BrightBots',
   description:
     'Real examples of AI automations and agent workflows we built for law firms and enterprise marketing teams.',
 };
@@ -81,6 +69,7 @@ export default function CaseStudiesPage() {
       <Navbar activePage="case-studies" />
 
       <main className="flex-1">
+        {/* Hero */}
         <section className="border-b border-border px-6 py-16 lg:px-8 lg:py-24">
           <div className="container mx-auto max-w-5xl text-center">
             <span className="mb-4 inline-flex items-center rounded-full border border-accent/20 bg-accent/8 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
@@ -95,6 +84,7 @@ export default function CaseStudiesPage() {
           </div>
         </section>
 
+        {/* Stats bar */}
         <section className="border-b border-border bg-light-gray px-6 py-12 lg:px-8">
           <div className="container mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-border bg-background p-6">
@@ -107,107 +97,89 @@ export default function CaseStudiesPage() {
             </div>
             <div className="rounded-2xl border border-border bg-background p-6">
               <div className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Hands-off execution</div>
-              <p className="text-foreground/70">Each workflow is designed to run reliably with minimal or no recurring manual intervention.</p>
+              <p className="text-foreground/70">Each workflow runs reliably with no recurring manual intervention.</p>
             </div>
           </div>
         </section>
 
+        {/* Case study cards */}
         <section className="px-6 py-16 lg:px-8 lg:py-24">
-          <div className="container mx-auto max-w-6xl space-y-10">
-            {caseStudies.map((study, index) => (
-              <article
-                key={study.title}
-                className="overflow-hidden rounded-[28px] border border-border bg-background shadow-[0_18px_50px_rgba(15,20,25,0.06)]"
-              >
-                <div className="grid gap-0 lg:grid-cols-[1.2fr_0.8fr]">
-                  <div className="border-b border-border p-8 lg:border-b-0 lg:border-r lg:p-10">
-                    <div className="mb-6 flex flex-wrap items-center gap-3">
-                      <span className="inline-flex items-center rounded-full bg-foreground/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-foreground/60">
-                        Case Study {index + 1}
-                      </span>
-                      <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-                        {study.cadence}
-                      </span>
-                    </div>
+          <div className="container mx-auto max-w-6xl">
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {caseStudies.map((study) => (
+                <article
+                  key={study.title}
+                  className="flex flex-col rounded-[24px] border border-accent/12 bg-[linear-gradient(150deg,rgba(77,101,255,0.08)_0%,rgba(180,190,255,0.12)_50%,rgba(255,255,255,0.6)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
+                >
+                  {/* Tags */}
+                  <div className="mb-4 flex flex-wrap items-center gap-2">
+                    <span className="rounded-full bg-foreground/6 px-3 py-1 text-xs font-semibold text-foreground/60">
+                      {study.industry}
+                    </span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+                      {study.cadence}
+                    </span>
+                  </div>
 
-                    <h2 className="mb-4 text-3xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.03em] lg:text-4xl">
-                      {study.title}
-                    </h2>
-                    <p className="mb-8 max-w-3xl text-lg leading-relaxed text-foreground/75">
-                      {study.summary}
+                  {/* Title + summary */}
+                  <h2 className="mb-2 text-lg font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em] leading-snug">
+                    {study.title}
+                  </h2>
+                  <p className="mb-6 text-sm leading-relaxed text-foreground/60">
+                    {study.summary}
+                  </p>
+
+                  {/* Mini flow */}
+                  <div className="mb-6 rounded-2xl border border-border/60 bg-white/70 p-4">
+                    <p className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-foreground/35">
+                      How it works
                     </p>
-
-                    <div className="grid gap-8 md:grid-cols-3">
-                      <div>
-                        <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Challenge</h3>
-                        <ul className="space-y-3 text-foreground/75">
-                          {study.challenge.map((item) => (
-                            <li key={item} className="leading-relaxed">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Solution</h3>
-                        <ul className="space-y-3 text-foreground/75">
-                          {study.solution.map((item) => (
-                            <li key={item} className="leading-relaxed">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Outcome</h3>
-                        <ul className="space-y-3 text-foreground/75">
-                          {study.outcome.map((item) => (
-                            <li key={item} className="leading-relaxed">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                    <div className="flex items-center justify-between gap-1">
+                      {study.flow.map((step, i) => (
+                        <div key={step.label} className="flex items-center gap-1">
+                          <div className="flex flex-col items-center gap-1.5">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-white shadow-sm">
+                              <Image src={step.logo} alt={step.label} width={20} height={20} className="object-contain" />
+                            </div>
+                            <span className="text-[10px] font-medium text-foreground/50 text-center leading-tight w-14">
+                              {step.label}
+                            </span>
+                          </div>
+                          {i < study.flow.length - 1 && (
+                            <svg className="mb-4 flex-shrink-0 text-accent/40" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                              <path d="M0 5h13M10 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          )}
+                        </div>
+                      ))}
                     </div>
                   </div>
 
-                  <div className="bg-[linear-gradient(180deg,rgba(77,101,255,0.08),rgba(15,20,25,0.02))] p-8 lg:p-10">
-                    <div className="mb-8 rounded-2xl border border-accent/15 bg-white/70 p-6">
-                      <div className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Time saved</div>
-                      <div className="text-3xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.03em]">
+                  {/* Bottom: metric + stack */}
+                  <div className="mt-auto flex items-end justify-between">
+                    <div>
+                      <span className="block text-4xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.04em] text-accent">
                         {study.timeSaved}
-                      </div>
+                      </span>
+                      <span className="text-xs font-medium text-foreground/45">
+                        {study.timeSavedLabel}
+                      </span>
                     </div>
-
-                    <div className="mb-8 rounded-2xl border border-border bg-background/80 p-6">
-                      <div className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-accent">Automation stack</div>
-                      <div className="flex flex-wrap gap-3">
-                        {study.stack.map((tool) => (
-                          <span
-                            key={tool}
-                            className="inline-flex items-center rounded-full border border-border bg-light-gray px-4 py-2 text-sm font-medium text-foreground/80"
-                          >
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="rounded-2xl border border-border bg-background/80 p-6">
-                      <div className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-accent">What this replaced</div>
-                      <p className="leading-relaxed text-foreground/75">
-                        Manual research, repetitive drafting, fragmented reporting, and recurring coordination work that teams were doing every week by hand.
-                      </p>
+                    <div className="flex items-center gap-2">
+                      {study.stack.map((tool) => (
+                        <div key={tool.name} className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-white shadow-sm">
+                          <Image src={tool.logo} alt={tool.name} width={16} height={16} className="object-contain" />
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
+        {/* CTA */}
         <section className="border-t border-border bg-light-gray px-6 py-16 lg:px-8 lg:py-24">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="mb-6 text-3xl font-bold font-[family-name:var(--font-inter)] lg:text-4xl">
