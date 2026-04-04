@@ -2,60 +2,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const caseStudies = [
-  {
-    industry: '⚖️ Law Firm',
-    cadence: 'Weekly',
-    title: 'Automated blog & LinkedIn content engine',
-    summary: 'Monitors legal news, drafts articles and posts, emails finished content — zero manual work.',
-    timeSaved: '5h',
-    timeSavedLabel: 'per week',
-    flow: [
-      { logo: '/logos/n8n.png',    label: 'Scrape news' },
-      { logo: '/logos/openai.png', label: 'AI drafts' },
-      { logo: '/logos/gmail.svg',  label: 'Email sent' },
-    ],
-    stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
-    ],
-  },
-  {
-    industry: '🏪 Sport Retailer',
-    cadence: 'Continuous',
-    title: 'Marketing asset performance tracker',
-    summary: 'Searches the internet for campaign asset usage and feeds findings into a dashboard.',
-    timeSaved: '15h+',
-    timeSavedLabel: 'per week',
-    flow: [
-      { logo: '/logos/n8n.png',    label: 'Web search' },
-      { logo: '/logos/openai.png', label: 'AI analysis' },
-      { logo: '/logos/Airtable.png', label: 'Dashboard' },
-    ],
-    stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
-    ],
-  },
-  {
-    industry: '⚖️ Law Firm',
-    cadence: 'Weekly',
-    title: 'Internal legal newsletter',
-    summary: 'Scrapes regulation sources, compiles a digest, and distributes it to all lawyers automatically.',
-    timeSaved: '10h+',
-    timeSavedLabel: 'per week',
-    flow: [
-      { logo: '/logos/n8n.png',    label: 'Scrape sources' },
-      { logo: '/logos/openai.png', label: 'AI digest' },
-      { logo: '/logos/gmail.svg',  label: 'Newsletter' },
-    ],
-    stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
-    ],
-  },
-];
+import { caseStudies } from '@/lib/case-studies';
 
 export const metadata = {
   title: 'Case Studies | BrightBots',
@@ -107,9 +54,10 @@ export default function CaseStudiesPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {caseStudies.map((study) => (
-                <article
-                  key={study.title}
-                  className="flex flex-col rounded-[24px] border border-accent/12 bg-[linear-gradient(150deg,rgba(77,101,255,0.08)_0%,rgba(180,190,255,0.12)_50%,rgba(255,255,255,0.6)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
+                <Link
+                  key={study.slug}
+                  href={`/case-studies/${study.slug}`}
+                  className="group flex flex-col rounded-[24px] border border-accent/12 bg-[linear-gradient(150deg,rgba(77,101,255,0.08)_0%,rgba(180,190,255,0.12)_50%,rgba(255,255,255,0.6)_100%)] p-6 shadow-[0_18px_45px_rgba(15,20,25,0.06)] transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_22px_60px_rgba(77,101,255,0.14)]"
                 >
                   {/* Tags */}
                   <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -122,7 +70,7 @@ export default function CaseStudiesPage() {
                   </div>
 
                   {/* Title + summary */}
-                  <h2 className="mb-2 text-lg font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em] leading-snug">
+                  <h2 className="mb-2 text-lg font-bold font-[family-name:var(--font-inter)] tracking-[-0.02em] leading-snug group-hover:text-accent transition-colors">
                     {study.title}
                   </h2>
                   <p className="mb-6 text-sm leading-relaxed text-foreground/60">
@@ -141,13 +89,13 @@ export default function CaseStudiesPage() {
                             <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-white shadow-sm">
                               <Image src={step.logo} alt={step.label} width={20} height={20} className="object-contain" />
                             </div>
-                            <span className="text-[10px] font-medium text-foreground/50 text-center leading-tight w-14">
+                            <span className="w-14 text-center text-[10px] font-medium leading-tight text-foreground/50">
                               {step.label}
                             </span>
                           </div>
                           {i < study.flow.length - 1 && (
                             <svg className="mb-4 flex-shrink-0 text-accent/40" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                              <path d="M0 5h13M10 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                              <path d="M0 5h13M10 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                           )}
                         </div>
@@ -155,7 +103,7 @@ export default function CaseStudiesPage() {
                     </div>
                   </div>
 
-                  {/* Bottom: metric + stack */}
+                  {/* Bottom: metric + stack + read more */}
                   <div className="mt-auto flex items-end justify-between">
                     <div>
                       <span className="block text-4xl font-bold font-[family-name:var(--font-inter)] tracking-[-0.04em] text-accent">
@@ -165,15 +113,20 @@ export default function CaseStudiesPage() {
                         {study.timeSavedLabel}
                       </span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      {study.stack.map((tool) => (
-                        <div key={tool.name} className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-white shadow-sm">
-                          <Image src={tool.logo} alt={tool.name} width={16} height={16} className="object-contain" />
-                        </div>
-                      ))}
+                    <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-1.5">
+                        {study.stack.map((tool) => (
+                          <div key={tool.name} className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-white shadow-sm">
+                            <Image src={tool.logo} alt={tool.name} width={16} height={16} className="object-contain" />
+                          </div>
+                        ))}
+                      </div>
+                      <span className="text-xs font-semibold text-accent/70 group-hover:text-accent transition-colors">
+                        Read →
+                      </span>
                     </div>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
