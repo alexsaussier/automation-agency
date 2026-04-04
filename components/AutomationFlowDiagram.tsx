@@ -235,7 +235,8 @@ export default function AutomationFlowDiagram() {
         <div className="mt-4 h-0.5 bg-foreground/8 rounded-full overflow-hidden">
           <div
             key={`progress-${activeIndex}`}
-            className="h-full bg-accent rounded-full flow-progress-bar"
+            className="h-full bg-accent rounded-full"
+            style={{ animation: 'progress-sweep 10s linear forwards' }}
           />
         </div>
       </div>

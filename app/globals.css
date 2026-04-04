@@ -335,7 +335,7 @@ body {
   animation: node-enter 0.35s ease-out forwards;
 }
 
-/* Progress bar sweeps across on each 4s cycle */
+/* Progress bar sweeps across on each 10s cycle */
 @keyframes progress-sweep {
   from { width: 0%; }
   to   { width: 100%; }
