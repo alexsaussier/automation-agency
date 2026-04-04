@@ -55,7 +55,7 @@ export const caseStudies = [
       'Checking usage manually required assigning junior analyst time to repetitive global internet research.',
     ],
     solution: [
-      'We built a workflow that searches the internet worldwide for the retailer's marketing assets and campaign traces.',
+      'We built a workflow that searches the internet worldwide for the retailer\'s marketing assets and campaign traces.',
       'The automation compiles the findings into a dashboard so the team can monitor who uses which assets, where they are being used, and how often they appear.',
       'This gives the marketing team a structured view of asset adoption across markets without manual research cycles.',
     ],
