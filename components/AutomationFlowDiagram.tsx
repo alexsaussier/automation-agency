@@ -174,7 +174,7 @@ export default function AutomationFlowDiagram() {
     timerRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % flows.length);
       setNodeKey((k) => k + 1);
-    }, 4000);
+    }, 10000);
   };
 
   useEffect(() => {

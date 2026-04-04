@@ -342,7 +342,7 @@ body {
 }
 
 .flow-progress-bar {
-  animation: progress-sweep 4s linear forwards;
+  animation: progress-sweep 10s linear forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
