@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Blue circle background -->
+  <circle cx="24" cy="24" r="22" fill="#2AABEE"/>
+  <!-- Paper plane / send arrow -->
+  <path fill="white" d="M10 24L36 13l-6 22-5-8-8 4 2-6z"/>
+  <path fill="#C8DAEA" d="M22 31l-1-8 14-10-13 18z"/>
+  <path fill="white" d="M21 23l14-10-5 18-9-8z"/>
+</svg>
