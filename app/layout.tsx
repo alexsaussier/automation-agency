@@ -19,7 +19,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.brightbots.io"
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "BrightBots — AI Automation Agency for SMEs",
+    default: "BrightBots — AI Automation Agency",
     template: "%s | BrightBots",
   },
   description:
