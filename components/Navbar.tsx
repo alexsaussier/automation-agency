@@ -10,15 +10,15 @@ export default function Navbar({ activePage = 'home' }: NavbarProps) {
     <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
       <nav className="container mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-1">
-            <Image 
+          <Link href="/" className="flex items-center gap-2">
+            <Image
               src="/logo.png"
               alt="BrightBots Logo"
               width={50}
               height={50}
               className="object-contain"
             />
-            
+            <span className="text-lg font-semibold">BrightBots</span>
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <Link
