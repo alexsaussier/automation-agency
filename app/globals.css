@@ -306,11 +306,53 @@ body {
   margin: 2.5rem 0;
 }
 
+/* ── Automation Flow Diagram ──────────────────────────────────────────────── */
+
+/* Dashes travel downward along the connector line */
+@keyframes flow-dash {
+  from { stroke-dashoffset: 10; }
+  to   { stroke-dashoffset: 0;  }
+}
+
+.flow-line-dash {
+  animation: flow-dash 0.55s linear infinite;
+}
+
+/* Nodes fade + slide up on mount / tab switch */
+@keyframes node-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flow-node-enter {
+  opacity: 0;
+  animation: node-enter 0.35s ease-out forwards;
+}
+
+/* Progress bar sweeps across on each 4s cycle */
+@keyframes progress-sweep {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+.flow-progress-bar {
+  animation: progress-sweep 4s linear forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .powered-by-track,
   .animate-rotate-forward-1,
   .animate-rotate-forward-2,
-  .animate-rotate-forward-3 {
+  .animate-rotate-forward-3,
+  .flow-line-dash,
+  .flow-node-enter,
+  .flow-progress-bar {
     animation: none !important;
   }
 }

@@ -1,6 +1,7 @@
 import OnboardingForm from '@/components/OnboardingForm';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import AutomationFlowDiagram from '@/components/AutomationFlowDiagram';
 
 const poweredByBrands = [
   {
@@ -173,58 +174,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side - AI Agent Cards */}
-            <div className="relative hidden lg:block h-[500px]">
-              {/* Agent Card 1 - SEO Agent */}
-              <div className="absolute top-0 right-0 w-64 h-56 bg-gradient-to-br from-blue-500/40 to-accent/30 rounded-2xl border border-blue-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="relative w-12 h-12 bg-blue-500/60 rounded-full flex items-center justify-center text-xl">
-                    🤖
-                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">🔍</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-sm text-foreground">SEO Agent</div>
-                    <div className="text-xs text-foreground/70">Search Optimization</div>
-                  </div>
-                </div>
-                <p className="text-sm text-foreground/80 italic leading-relaxed">
-                  "I improve your SEO ranking automatically by analyzing competitors and optimizing content"
-                </p>
-              </div>
-
-              {/* Agent Card 2 - Customer Support Agent */}
-              <div className="absolute top-32 right-20 w-64 h-56 bg-gradient-to-br from-purple-500/40 to-accent/30 rounded-2xl border border-purple-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-2">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="relative w-12 h-12 bg-purple-500/60 rounded-full flex items-center justify-center text-xl">
-                    🤖
-                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">💬</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-sm text-foreground">Customer Support Agent</div>
-                    <div className="text-xs text-foreground/70">24/7 Support</div>
-                  </div>
-                </div>
-                <p className="text-sm text-foreground/80 italic leading-relaxed">
-                  "I handle customer inquiries 24/7, resolving 80% of tickets instantly"
-                </p>
-              </div>
-
-              {/* Agent Card 3 - Data Analyst Agent */}
-              <div className="absolute bottom-0 right-40 w-64 h-56 bg-gradient-to-br from-green-500/40 to-accent/30 rounded-2xl border border-green-400/50 p-6 shadow-xl backdrop-blur-sm animate-rotate-forward-3">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="relative w-12 h-12 bg-green-500/60 rounded-full flex items-center justify-center text-xl">
-                    🤖
-                    <span className="absolute -bottom-0.5 -right-0.5 text-sm">📊</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-sm text-foreground">Marketing Analyst Agent</div>
-                    <div className="text-xs text-foreground/70">Analytics & Insights</div>
-                  </div>
-                </div>
-                <p className="text-sm text-foreground/80 italic leading-relaxed">
-                  "I monitor the popularity of our marketing campaigns and suggest improvements based on the data"
-                </p>
-              </div>
+            {/* Right side - Automation Flow Diagram */}
+            <div className="relative hidden lg:flex items-center justify-center">
+              <AutomationFlowDiagram />
             </div>
           </div>
         </div>
