@@ -9,13 +9,13 @@ export const caseStudies = [
     timeSavedLabel: 'per week',
     timeSavedFull: '5 hours saved weekly',
     flow: [
-      { logo: '/logos/n8n.png',    label: 'Scrape news' },
-      { logo: '/logos/openai.png', label: 'AI drafts' },
-      { logo: '/logos/gmail.svg',  label: 'Email sent' },
+      { logo: '/logos/n8n_notext.png',    label: 'Scrape news' },
+      { logo: '/logos/openai_notext.png', label: 'AI drafts' },
+      { logo: '/logos/gmail.png',  label: 'Email sent' },
     ],
     stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
+      { logo: '/logos/n8n_notext.png', name: 'n8n' },
+      { logo: '/logos/openai_notext.png', name: 'OpenAI' },
     ],
     challenge: [
       'The firm wanted to publish timely legal commentary but did not want lawyers or staff spending time reviewing local legal news every week.',
@@ -41,13 +41,13 @@ export const caseStudies = [
     timeSavedLabel: 'per week',
     timeSavedFull: '15+ hours saved weekly',
     flow: [
-      { logo: '/logos/n8n.png',      label: 'Web search' },
-      { logo: '/logos/openai.png',   label: 'AI analysis' },
-      { logo: '/logos/Airtable.png', label: 'Dashboard' },
+      { logo: '/logos/n8n_notext.png',      label: 'Web search' },
+      { logo: '/logos/openai_notext.png',   label: 'AI analysis' },
+      { logo: '/logos/airtable_notext.svg', label: 'Dashboard' },
     ],
     stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
+      { logo: '/logos/n8n_notext.png',    name: 'n8n' },
+      { logo: '/logos/openai_notext.png', name: 'OpenAI' },
     ],
     challenge: [
       'The retailer invests heavily in worldwide marketing assets such as photo shoots, banners, and campaign visuals.',
@@ -74,13 +74,13 @@ export const caseStudies = [
     timeSavedLabel: 'per week',
     timeSavedFull: '10+ hours saved weekly',
     flow: [
-      { logo: '/logos/n8n.png',    label: 'Scrape sources' },
-      { logo: '/logos/openai.png', label: 'AI digest' },
-      { logo: '/logos/gmail.svg',  label: 'Newsletter' },
+      { logo: '/logos/n8n_notext.png',    label: 'Scrape sources' },
+      { logo: '/logos/openai_notext.png', label: 'AI digest' },
+      { logo: '/logos/gmail.png',  label: 'Newsletter' },
     ],
     stack: [
-      { logo: '/logos/n8n.png',    name: 'n8n' },
-      { logo: '/logos/openai.png', name: 'OpenAI' },
+      { logo: '/logos/n8n_notext.png',    name: 'n8n' },
+      { logo: '/logos/openai_notext.png', name: 'OpenAI' },
     ],
     challenge: [
       'Lawyers were spending hours every week checking local websites such as Journal de Monaco and Legimonaco to stay current on regulatory developments.',
