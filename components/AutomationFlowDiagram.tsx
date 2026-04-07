@@ -48,7 +48,7 @@ const flows = [
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/gmail.png" alt="Gmail" />,
+        icon: <LogoIcon src="/logos/Gmail.png" alt="Gmail" />,
         label: 'Newsletter Sent',
         sublabel: 'Team receives every Monday',
         color: 'from-red-500/15 to-red-400/10 border-red-400/30',
@@ -76,7 +76,7 @@ const flows = [
         iconBg: 'bg-white border border-gray-200',
       },
       {
-        icon: <LogoIcon src="/logos/slack.png" alt="Slack" />,
+        icon: <LogoIcon src="/logos/Slack.png" alt="Slack" />,
         label: 'CRM + Slack Alert',
         sublabel: 'Lead registered, team notified',
         color: 'from-purple-500/20 to-purple-400/10 border-purple-400/30',
@@ -90,7 +90,7 @@ const flows = [
     emoji: '🎧',
     steps: [
       {
-        icon: <LogoIcon src="/logos/gmail.png" alt="Gmail" />,
+        icon: <LogoIcon src="/logos/Gmail.png" alt="Gmail" />,
         label: 'Customer Email',
         sublabel: 'Incoming support request',
         color: 'from-red-500/15 to-red-400/10 border-red-400/30',

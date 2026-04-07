@@ -11,7 +11,7 @@ export const caseStudies = [
     flow: [
       { logo: '/logos/n8n_notext.png',    label: 'Scrape news' },
       { logo: '/logos/openai_notext.png', label: 'AI drafts' },
-      { logo: '/logos/gmail.png',  label: 'Email sent' },
+      { logo: '/logos/Gmail.png',  label: 'Email sent' },
     ],
     stack: [
       { logo: '/logos/n8n_notext.png', name: 'n8n' },
@@ -76,7 +76,7 @@ export const caseStudies = [
     flow: [
       { logo: '/logos/n8n_notext.png',    label: 'Scrape sources' },
       { logo: '/logos/openai_notext.png', label: 'AI digest' },
-      { logo: '/logos/gmail.png',  label: 'Newsletter' },
+      { logo: '/logos/Gmail.png',  label: 'Newsletter' },
     ],
     stack: [
       { logo: '/logos/n8n_notext.png',    name: 'n8n' },
