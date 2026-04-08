@@ -139,7 +139,7 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p className="text-sm md:text-base font-semibold">
-              <span className="font-bold">FREE AI Audit</span> for new customers - Discover automation opportunities in your business
+              <span className="font-bold">Free AI Audit</span> for companies with less than 20 employees
             </p>
             <a href="#get-started" className="hidden sm:inline-block bg-white text-green-600 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-green-50 transition-colors ml-2">
               Claim Now
