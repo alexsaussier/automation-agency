@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
@@ -31,6 +31,14 @@ jobs:
         run: |
           git config user.name "BrightBots Blog Bot"
           git config user.email "actions@github.com"
+
+      - name: Check secrets
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "❌ ANTHROPIC_API_KEY secret is not set. Go to repo Settings → Secrets → Actions and add it."
+            exit 1
+          fi
+          echo "✓ ANTHROPIC_API_KEY present"
 
       - name: Generate articles
         run: node scripts/generate-article.mjs
