@@ -77,7 +77,7 @@ export default function About() {
                     </a>
                   </div>
                   <p className="text-xl text-accent font-medium">
-                    Founder & CEO
+                    Founder
                   </p>
                 </div>
 
