@@ -268,10 +268,10 @@ export default function OnboardingForm() {
         <div className="space-y-6">
           <div>
             <h3 className="text-2xl font-bold mb-2 font-[family-name:var(--font-inter)]">
-              Help us prepare for your call
+              Is there anything else that would be helpful for us to know?
             </h3>
             <p className="text-foreground/60 font-[family-name:var(--font-roboto)]">
-              Is there anything else that would be helpful for us to know before?
+              We'll use this information to help you best.
             </p>
           </div>
 
