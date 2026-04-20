@@ -44,7 +44,7 @@ export default function About() {
 
                   <div className="mt-6 flex w-full max-w-[220px] flex-col items-center rounded-2xl border border-border bg-background p-4 shadow-sm">
                     <span className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/45">
-                      Previous experience:
+                      AI Consultant at
                     </span>
                     <Image
                       src="/logos/deloitte.svg"
