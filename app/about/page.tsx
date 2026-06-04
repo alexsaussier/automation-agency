@@ -125,7 +125,7 @@ export default function About() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/AfqLIkPpsc0"
+                  src="https://www.youtube.com/embed/l9WiTxDVpMc"
                   title={process.env.NEXT_PUBLIC_COMPANY_NAME + " - Case Studies & Testimonials"}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -135,7 +135,7 @@ export default function About() {
               
               <div className="mt-8 text-center">
                 <a
-                  href="https://www.youtube.com/watch?v=AfqLIkPpsc0"
+                  href="https://www.youtube.com/watch?v=l9WiTxDVpMc"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent-dark font-medium transition-colors"
