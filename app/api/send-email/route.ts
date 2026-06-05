@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { businessType, businessSize, painPoint, otherPainPoint, additionalInfo } = body;
+    const { businessType, businessSize, painPoint, otherPainPoint, additionalInfo, companyName, email, phone } = body;
 
     // Create transporter using SMTP
     const transporter = nodemailer.createTransport({
@@ -20,6 +20,13 @@ export async function POST(request: Request) {
     // Format the email content
     const emailContent = `
       <h2>New Lead from ${process.env.NEXT_PUBLIC_COMPANY_NAME} Onboarding Form</h2>
+
+      <h3>Contact Information:</h3>
+      <ul>
+        <li><strong>Company:</strong> ${companyName || 'Not specified'}</li>
+        <li><strong>Email:</strong> ${email || 'Not specified'}</li>
+        <li><strong>Phone:</strong> ${phone || 'Not specified'}</li>
+      </ul>
 
       <h3>Business Information:</h3>
       <ul>
@@ -43,7 +50,8 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to: 'alex@brightbots.io',
-      subject: `New Lead: ${businessType} - ${businessSize}`,
+      replyTo: email || undefined,
+      subject: `New Lead: ${companyName || businessType} - ${businessSize}`,
       html: emailContent,
     });
 
