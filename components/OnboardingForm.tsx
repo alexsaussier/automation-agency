@@ -8,7 +8,13 @@ interface FormData {
   businessSize: string;
   painPoint: string;
   otherPainPoint: string;
+  companyName: string;
+  email: string;
+  phone: string;
 }
+
+const isValidEmail = (email: string) =>
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 
 function ScrollableOptions({ children }: { children: React.ReactNode }) {
   return (
@@ -31,6 +37,9 @@ export default function OnboardingForm() {
     businessSize: '',
     painPoint: '',
     otherPainPoint: '',
+    companyName: '',
+    email: '',
+    phone: '',
   });
   const [showModal, setShowModal] = useState(false);
   const [additionalInfo, setAdditionalInfo] = useState('');
@@ -128,7 +137,7 @@ export default function OnboardingForm() {
         alert('Thank you! We\'ve received your information and will get back to you soon.');
         setShowModal(false);
         setAdditionalInfo('');
-        setFormData({ businessType: '', businessSize: '', painPoint: '', otherPainPoint: '' });
+        setFormData({ businessType: '', businessSize: '', painPoint: '', otherPainPoint: '', companyName: '', email: '', phone: '' });
         setStep(1);
         setDisplayStep(1);
       } else {
@@ -268,19 +277,70 @@ export default function OnboardingForm() {
         <div className="space-y-6">
           <div>
             <h3 className="text-2xl font-bold mb-2 font-[family-name:var(--font-inter)]">
-              Is there anything else that would be helpful for us to know?
+              How can we reach you?
             </h3>
             <p className="text-foreground/60 font-[family-name:var(--font-roboto)]">
-              We'll use this information to help you best.
+              Share your details and we'll get back to you shortly.
             </p>
           </div>
 
-          <textarea
-            value={additionalInfo}
-            onChange={(e) => setAdditionalInfo(e.target.value)}
-            placeholder="anything else that would be helpful for us to know?"
-            className="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 min-h-[150px] text-base transition-all resize-none"
-          />
+          <div className="space-y-4">
+            <div>
+              <label htmlFor="companyName" className="block text-sm font-medium mb-2 font-[family-name:var(--font-inter)]">
+                Company name
+              </label>
+              <input
+                id="companyName"
+                type="text"
+                value={formData.companyName}
+                onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                placeholder="Your company"
+                className="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 text-base transition-all"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium mb-2 font-[family-name:var(--font-inter)]">
+                Email <span className="text-accent">*</span>
+              </label>
+              <input
+                id="email"
+                type="email"
+                required
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                placeholder="you@company.com"
+                className="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 text-base transition-all"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium mb-2 font-[family-name:var(--font-inter)]">
+                Phone
+              </label>
+              <input
+                id="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                placeholder="+1 (555) 000-0000"
+                className="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 text-base transition-all"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="additionalInfo" className="block text-sm font-medium mb-2 font-[family-name:var(--font-inter)]">
+              Anything else that would be helpful for us to know?
+            </label>
+            <textarea
+              id="additionalInfo"
+              value={additionalInfo}
+              onChange={(e) => setAdditionalInfo(e.target.value)}
+              placeholder="anything else that would be helpful for us to know?"
+              className="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 min-h-[120px] text-base transition-all resize-none"
+            />
+          </div>
 
           <div className="flex gap-4">
             <button
@@ -291,7 +351,7 @@ export default function OnboardingForm() {
             </button>
             <button
               onClick={handleSendEmail}
-              disabled={isSending}
+              disabled={isSending || !isValidEmail(formData.email)}
               className="flex-1 bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-xl text-base font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30"
             >
               {isSending ? 'Sending...' : 'Contact Us'}
