@@ -112,7 +112,7 @@ const processSteps = [
   },
   {
     title: 'Company AI Audit',
-    badge: 'FREE under 20 employees',
+    badge: null,
     description: 'We interview your employees to understand their day-to-day tasks and map out all automation opportunities. You receive a comprehensive report of potential improvements.',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ const processSteps = [
   },
   {
     title: '24/7 Maintenance & Support',
-    badge: 'ONGOING',
+    badge: null,
     description: 'We handle all technical aspects—updates, bugs, optimizations—so you never have to worry. Available 24/7 with a direct line to our CEO.',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -249,13 +249,6 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left side - Text content */}
             <div>
-              <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-1.5 text-sm text-foreground/70 shadow-sm backdrop-blur">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-60"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
-                </span>
-                Taking on new clients for Q3
-              </span>
               <h2 className="mb-6 font-[family-name:var(--font-inter)] text-5xl font-bold leading-[1.05] tracking-[-0.03em] lg:text-7xl">
                 <span className="bg-gradient-to-r from-accent to-[#7c8fff] bg-clip-text text-transparent">AI Agents</span>
                 <br />
@@ -358,10 +351,10 @@ export default function Home() {
           <div className="mb-16 text-center">
             <SectionEyebrow>How it works</SectionEyebrow>
             <h3 className="mb-4 font-[family-name:var(--font-inter)] text-3xl font-bold tracking-[-0.03em] lg:text-5xl">
-              Get a free AI audit of your company now
+              Book a free discovery call to see how we can help your business
             </h3>
             <p className="mx-auto max-w-2xl text-lg text-foreground/70">
-              We offer a free, complete audit of AI opportunities in your company for our new customers with less than 20 employees.
+              We start from a discovery call to understand your business and your needs, and then we can discuss the best options for you.
             </p>
           </div>
 
@@ -462,15 +455,69 @@ export default function Home() {
               Get in touch
             </h3>
             <p className="mx-auto max-w-2xl text-lg text-foreground/70">
-              Let&apos;s get on a free discovery call together to see how you can benefit from AI-powered automation.
+              Book a call directly or send us a message — whichever works best for you.
             </p>
           </div>
 
-          {/* Questionnaire */}
-          <div className="overflow-hidden rounded-3xl border border-border bg-light-gray shadow-[0_24px_70px_rgba(15,20,25,0.08)]">
-            <div className="h-1.5 w-full bg-gradient-to-r from-accent via-[#7c8fff] to-accent/40"></div>
-            <div className="p-8 lg:p-12">
-              <OnboardingForm />
+          <div className="flex flex-col gap-8">
+            {/* Discovery call */}
+            <div className="flex flex-col overflow-hidden rounded-3xl border border-border bg-light-gray shadow-[0_24px_70px_rgba(15,20,25,0.08)]">
+              <div className="h-1.5 w-full bg-gradient-to-r from-accent via-[#7c8fff] to-accent/40"></div>
+              <div className="flex flex-1 flex-col p-8 lg:p-10">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h4 className="mb-3 font-[family-name:var(--font-inter)] text-2xl font-bold tracking-[-0.02em]">
+                  Book a discovery call
+                </h4>
+                <p className="mb-8 flex-1 leading-relaxed text-foreground/70">
+                  Pick a time that works for you and speak with me directly. We&apos;ll discuss how you work today and where AI automation can save you time. No commitment, just a discovey chat ☕️.
+                </p>
+                <ul className="mb-8 space-y-3 text-sm text-foreground/65">
+                  {['Free 30-minute intro call', 'Choose a slot that fits your schedule', 'Get actionable insights on the spot'].map((item) => (
+                    <li key={item} className="flex items-start gap-2.5">
+                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="https://calendar.google.com/appointments/schedules/AcZssZ23Q8A4EmbpY75gomc0vzR5y6fZDR3-xAhHGQ6WdOjw4Wwpj9z1tQ3UvhD_s3VyTDmlP8u78ore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex w-fit items-center justify-center gap-2 self-start rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-[0_10px_30px_rgba(77,101,255,0.35)] transition-all hover:bg-accent-dark hover:shadow-[0_12px_36px_rgba(77,101,255,0.45)]"
+                >
+                  Schedule a call
+                  <svg className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Offline contact form */}
+            <div className="flex flex-col overflow-hidden rounded-3xl border border-border bg-light-gray shadow-[0_24px_70px_rgba(15,20,25,0.08)]">
+              <div className="h-1.5 w-full bg-gradient-to-r from-accent/40 via-[#7c8fff] to-accent"></div>
+              <div className="flex flex-1 flex-col p-8 lg:p-10">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h4 className="mb-3 font-[family-name:var(--font-inter)] text-2xl font-bold tracking-[-0.02em]">
+                  Contact us offline
+                </h4>
+                <p className="mb-6 leading-relaxed text-foreground/70">
+                  Prefer to reach out on your own time? Fill out this short questionnaire and we&apos;ll get back to you by email.
+                </p>
+                <div className="flex-1">
+                  <OnboardingForm />
+                </div>
+              </div>
             </div>
           </div>
         </div>
