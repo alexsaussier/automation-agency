@@ -202,7 +202,7 @@ function PoweredByLogo({
   height: number;
 }) {
   return (
-    <div className="powered-by-card flex min-w-[180px] items-center justify-center px-4 py-3 opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
+    <div className="powered-by-card flex min-w-[180px] items-center justify-center px-4 py-3 opacity-90 transition-opacity duration-300 hover:opacity-100">
       <div className="flex h-12 w-[150px] items-center justify-center">
         <img
           src={src}
