@@ -41,6 +41,23 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Hero background: soft radial accent glow */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% -10%, rgba(77, 101, 255, 0.12), transparent 70%),
+    var(--background);
+}
+
+/* Hero background: faint blueprint grid, fading out towards the bottom */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(15, 20, 25, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 20, 25, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 75% 70% at 50% 0%, black 30%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 0%, black 30%, transparent 85%);
+}
+
 /* Hide scrollbar for scrollable elements */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
